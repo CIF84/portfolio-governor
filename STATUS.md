@@ -4,7 +4,7 @@ Recorded: 2026-10-08
 
 Branch: `main`
 
-Operational state: `IMPLEMENTED_AWAITING_OWNER_REVIEW`
+Operational state: `SPEC_001_OWNER_ACCEPTED_CLOSED`
 
 ## Mission
 
@@ -14,72 +14,62 @@ It remains observational and advisory toward governed projects.
 
 ## Current approved work packet
 
-`specs/SPEC-001-minimum-operational-governor.md`
+None.
 
-Status: `APPROVED_FOR_IMPLEMENTATION`
+SPEC-001 — Minimum Operational Governor is owner-reviewed, accepted and closed.
 
-Implementation: complete locally; owner acceptance pending. The approved spec
-and frozen governance baseline are unchanged.
+Reviewed endpoint: `610164f37e25dc6cbefb66207f2c2f8224451e3b`
 
-Authority: `GOVERNOR_REPO_ONLY`
+Promotion merge: `f5f36d8a2360a1c91b6187d6037b9725bc911047`
 
-Human gate: `OWNER_REVIEW`
+Owner verdict: `PASS_MINIMUM_OPERATIONAL_GOVERNOR_EARNED`
 
-Promotion: `NOT_AUTHORIZED`
+No SPEC-002 or follow-up implementation packet is authorized.
 
-## Objective
+## Canonical capability
 
-Operationalize only the proven manual loop:
+Governor may prepare read-only portfolio evidence using the accepted SPEC-001 mechanism:
 
-fresh project evidence → review-due detection → evidence assembly → Purpose / Truth / Safety / Capital → strategic debt / trajectory → allocation → durable Governor record.
+- derived Governor-local portfolio state;
+- bounded evidence assembly;
+- freshness verification;
+- conservative review-trigger candidates/facts;
+- review/allocation drafts for human/LLM judgment.
 
-## Authority now
+The mechanism does not publish a governance verdict automatically.
 
-Allowed:
-- inspect Governor files;
-- read governed repository evidence;
-- implement Governor-local derived state/evidence assembly/freshness/trigger/template machinery required by SPEC-001;
-- add tests/documentation inside this repository;
-- prepare a dogfood rehearsal evidence packet;
-- commit Governor-repository implementation for owner review.
+## Authority
+
+Governor remains observational and advisory toward governed projects.
 
 Not authorized:
 - modify Knowledge Compiler, Opportunity Radar, or Asymmetry Engine;
-- activate/stop/preempt/reprioritize governed-project work;
-- change Portfolio Constitution or project constitutions;
+- activate, stop, preempt or reprioritize governed-project work;
+- change the Portfolio Constitution or project constitutions;
 - authorize external actions or spending;
 - grant Governor governed-repo write authority;
-- deploy daemon/service;
-- build dashboard/UI;
-- publish a new Governor review verdict from dogfood rehearsal without separate authority.
+- deploy autonomous/background operation;
+- publish a new Governor review/allocation without the applicable review/owner workflow.
 
-## Frozen governance baseline
+## Governance baseline
 
 - Constitution: `CONSTITUTION.md` v0.1
 - Latest accepted review: `reviews/GOV-004.md`
 - Latest accepted allocation: `allocations/CYCLE-009.md`
 - Governed projects: `PROJECTS.md`
 
-Historical reviews and allocations are immutable evidence for SPEC-001.
+Historical reviews, allocations and SPEC-001 rehearsal evidence remain preserved.
+
+## Important freshness state
+
+The preserved SPEC-001 rehearsal is historical evidence and is stale for any new governance judgment.
+
+A new review must assemble and verify a fresh evidence packet before being represented as current.
 
 ## Next operation
 
-`Review the SPEC-001 implementation and dogfood rehearsal.`
+None automatically authorized.
 
-Implementation: `governor/`
+Use the accepted Minimum Operational Governor mechanism when the next Governor review is due.
 
-Operating instructions: `docs/OPERATIONS.md`
-
-Acceptance/rehearsal report: `docs/SPEC-001-IMPLEMENTATION.md`
-
-Derived state: `state/portfolio.yaml`
-
-Final rehearsal: `evidence/spec001-dogfood-20261008-v3/manifest.json`
-
-Validation: 25 tests passed. Rehearsal initially verified locally, then correctly
-failed freshness when Opportunity Radar's uncommitted status changed.
-Derived state is `STALE_REVIEW_REFRESH_REQUIRED`; assemble a new packet before
-accepting any current governance judgment. Implementation owner review can
-inspect the preserved rehearsal and stale-check evidence.
-
-Stop at owner review. Passing implementation does not authorize autonomous operation.
+Stop after SPEC-001 closure. Promotion does not authorize SPEC-002, authority expansion, autonomous operation or governed-project mutation.
