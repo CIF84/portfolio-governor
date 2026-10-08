@@ -47,4 +47,20 @@ Controls are proportional to consequence. Resources are allocated in proportion 
 
 ## Status
 
-Four manual review/allocation cycles have validated the governance function. `SPEC-001 — Minimum Operational Governor` is now approved to operationalize evidence freshness, review-trigger detection, evidence assembly, derived state, and durable review workflow **inside this repository only**.\n\nOperationalization does not grant write authority over governed projects, autonomous spending, preemption, or external-action authority. Automation must continue to earn authority through evidence.
+Four manual review/allocation cycles have validated the governance function.
+`SPEC-001 — Minimum Operational Governor` is implemented for owner review:
+bounded read-only evidence assembly, derived portfolio state, freshness guards,
+trigger observations and review/allocation drafts **inside this repository only**.
+
+```sh
+python3 -m governor assemble --packet my-rehearsal
+python3 -m governor verify --packet my-rehearsal
+python3 -m unittest discover -s tests -v
+```
+
+Python 3.10+ and Git suffice. See [operating instructions](docs/OPERATIONS.md)
+and the [implementation/rehearsal report](docs/SPEC-001-IMPLEMENTATION.md).
+
+Operationalization does not grant write authority over governed projects,
+autonomous spending, preemption, or external-action authority. Canonical use and
+autonomous operation remain unapproved pending owner review.

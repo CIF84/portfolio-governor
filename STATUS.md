@@ -4,7 +4,7 @@ Recorded: 2026-10-08
 
 Branch: `main`
 
-Operational state: `READY_FOR_IMPLEMENTATION`
+Operational state: `IMPLEMENTED_AWAITING_OWNER_REVIEW`
 
 ## Mission
 
@@ -17,6 +17,9 @@ It remains observational and advisory toward governed projects.
 `specs/SPEC-001-minimum-operational-governor.md`
 
 Status: `APPROVED_FOR_IMPLEMENTATION`
+
+Implementation: complete locally; owner acceptance pending. The approved spec
+and frozen governance baseline are unchanged.
 
 Authority: `GOVERNOR_REPO_ONLY`
 
@@ -61,6 +64,22 @@ Historical reviews and allocations are immutable evidence for SPEC-001.
 
 ## Next operation
 
-`Implement SPEC-001 within the Governor repository only.`
+`Review the SPEC-001 implementation and dogfood rehearsal.`
+
+Implementation: `governor/`
+
+Operating instructions: `docs/OPERATIONS.md`
+
+Acceptance/rehearsal report: `docs/SPEC-001-IMPLEMENTATION.md`
+
+Derived state: `state/portfolio.yaml`
+
+Final rehearsal: `evidence/spec001-dogfood-20261008-v3/manifest.json`
+
+Validation: 25 tests passed. Rehearsal initially verified locally, then correctly
+failed freshness when Opportunity Radar's uncommitted status changed.
+Derived state is `STALE_REVIEW_REFRESH_REQUIRED`; assemble a new packet before
+accepting any current governance judgment. Implementation owner review can
+inspect the preserved rehearsal and stale-check evidence.
 
 Stop at owner review. Passing implementation does not authorize autonomous operation.

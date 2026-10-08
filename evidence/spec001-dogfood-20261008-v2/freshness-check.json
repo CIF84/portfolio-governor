@@ -1,0 +1,11 @@
+{
+  "packet_id": "spec001-dogfood-20261008-v2",
+  "checked_at": "2026-10-08T09:31:32+00:00",
+  "result": "STALE_REVIEW_REFRESH_REQUIRED",
+  "evidence_scope": "LOCAL_WORKTREE_ONLY",
+  "mismatches": [
+    "Governor input changed: governor/config.json",
+    "Governor input changed: governor/workflow.py"
+  ],
+  "authority": "OWNER_REVIEW_REQUIRED_NO_VERDICT_PUBLISHED"
+}

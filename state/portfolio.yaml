@@ -1,0 +1,1649 @@
+{
+  "schema_version": 1,
+  "packet_id": "spec001-dogfood-20261008-v3",
+  "assembled_at": "2026-10-08T09:31:32+00:00",
+  "authority": "GOVERNOR_REPO_ONLY",
+  "promotion": "NOT_AUTHORIZED",
+  "mode": "REHEARSAL_EVIDENCE_ONLY",
+  "freshness": "STALE_REVIEW_REFRESH_REQUIRED",
+  "evidence_scope": "LOCAL_WORKTREE_ONLY",
+  "remote_state": "NOT_CHECKED_OFFLINE",
+  "constitution_version": "v0.1",
+  "previous_review": "reviews/GOV-004.md",
+  "previous_allocation": "allocations/CYCLE-009.md",
+  "governor_input_sha256": {
+    "governor/config.json": "076e5b4b074344a909f855600fc452f226e6e8cdfde5f66466ba55835c9f93cf",
+    "governor/workflow.py": "200b995a4793362463891c6e11b9ae6b607b322e994679500b571c469fa495bb",
+    "governor/__main__.py": "fd09735de7d7c334c5d5939d800a3785760283c7bd2c204ddf97be8d20fe53fc",
+    "governor/__init__.py": "3a4df281debf70d6d19fe8278db9f1c71a024991821063e2f3cb84a564c014d8",
+    "templates/review.md": "3a86ae0237e32cc11049d19ff1ee40e3f771ef3e64083c8f369bccbf4b6f5c9c",
+    "templates/allocation.md": "1fa2f1a89007c1893db3c208eb06e0243405673a4334b443d3aedf80412daee2",
+    "CONSTITUTION.md": "187a76159fc5e212698c76abcf9262f5dad114d000e8468d8632ea39206a83b7",
+    "GOVERNOR_PROTOCOL.md": "447d3f23a96e85ee5238efa6ece0bd7a113398e38eb4f0a2c5b9c324d64694b4",
+    "PROJECTS.md": "266eec6ab6f5c62f60e933041fa57902638b0a9169c472cab29ccc6c29403188",
+    "reviews/GOV-004.md": "1bcaa44f3fabf27b47486da64dc84696c03fc16fd412e813b794f6c2b68668ae",
+    "allocations/CYCLE-009.md": "8dbcf62d5493bd7ecb30575a9d7ebe8a77c7594f25e1b43d42e4c6eefb80c4e9",
+    "constitutions/knowledge-compiler.md": "0788fab8679492732151610b0b5102a426fbee5fd692cb8e59054affa25f0576",
+    "constitutions/opportunity-radar.md": "86672efd905adfe8798a74f1522b0f2752a3cc5d5faf7aa04c69fe24cf9216af",
+    "constitutions/asymmetry-engine.md": "5204ffeeb19fa805461a9bcfe71de0ecee0f8ff210e6fc6037636c570c33340f"
+  },
+  "projects": [
+    {
+      "id": "knowledge-compiler",
+      "name": "Knowledge Compiler",
+      "repository": "CIF84/knowledge-compiler",
+      "constitution_path": "constitutions/knowledge-compiler.md",
+      "authoritative_status_path": "STATUS.md",
+      "evaluated_head": "7b83d8d4361d02dfbe1c8b5c0a7ae0d79fd4758a",
+      "status_sha256": "386f95369f6b8497387cc02cd4b77186b9ce73fedf1b1154989477e805a0c2f3",
+      "tracked_worktree_dirty": false,
+      "tracked_worktree_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evidence_timestamp": "2026-10-08T09:31:32+00:00",
+      "project_gate_state": {
+        "classification": "VERBATIM_OBSERVATION_REQUIRES_REVIEW",
+        "excerpts": [
+          {
+            "heading": "Preamble",
+            "text": "# Knowledge Compiler — Current Status\n\nThis is the authoritative repository handoff for current work coordination. Agents must not infer active work from filename recency."
+          },
+          {
+            "heading": "Current approved work packet",
+            "text": "```text\nspecs/BENCH-001-ia001-benchmark-execution-readiness.md\n```\n\nStatus: `APPROVED_FOR_IMPLEMENTATION`\n\nAuthority: `OFFLINE_ONLY`\n\nHuman gate: `OWNER_REVIEW`\n\nPromotion: `NOT_AUTHORIZED`"
+          },
+          {
+            "heading": "Current gate",
+            "text": "BENCH-001 is authorized to make the frozen independent benchmark executable **before any benchmark source is selected or exposed**.\n\nFrozen benchmark arms:\n- S — source control;\n- A — one-call direct explanation;\n- B — two-call plan then explain;\n- C0 — current compiler behavior;\n- C+ — competitive semantic compiler with up to three typed extraction stages plus source-aware explanatory composition.\n\nFuture five-source maximum: 40 model calls. No judge, retry, repair or enrichment calls.\n\nBENCH-001 must freeze prompts/schemas, common model policy, executables/dependencies, neutral renderer, budgets, failure semantics, metrics, source-selector handoff, fidelity-review contract, blinding/custody tooling and learner-review templates.\n\nPreferred offline common-model candidate: `gpt-6.1-sol` / high / `store=False`; no silent substitution. Remote provider support may remain unverified until a later execution packet.\n\nNo benchmark source retrieval/selection, model/provider calls, benchmark output generation, learner/fidelity review, atomization/semantic-judge continuation, architecture promotion or benchmark winner selection is authorized."
+          }
+        ]
+      },
+      "last_governor_review": "reviews/GOV-004.md",
+      "last_allocation": "allocations/CYCLE-009.md",
+      "governor_verdict": {
+        "source": "reviews/GOV-004.md",
+        "status": "LAST_ACCEPTED_NOT_REEVALUATED",
+        "text": "**RUN BENCHMARK READINESS.**\n\nDo not resume atomization/semantic-judge work unless the benchmark later demonstrates that semantic machinery earns its complexity."
+      },
+      "material_strategic_debt": {
+        "source": "reviews/GOV-004.md",
+        "status": "LAST_ACCEPTED_NOT_REEVALUATED",
+        "text": "- architecture viability evidence;\n- external learner evidence;\n- Minimum Sellable State;\n- monetization;\n- repeat use;\n- production unit economics."
+      },
+      "history": {
+        "scope": "RECENT_CONTEXT_ONLY_BASELINE_UNKNOWN",
+        "baseline": null,
+        "commits": [
+          {
+            "head": "7b83d8d4361d02dfbe1c8b5c0a7ae0d79fd4758a",
+            "subject": "activate BENCH-001 independent benchmark readiness"
+          },
+          {
+            "head": "9438c16290fea5121b49126f1c8c578bf949df51",
+            "subject": "publish BENCH-001 benchmark execution readiness"
+          },
+          {
+            "head": "62ef05545a1b6cdf6576649e103ea9b0a1f9bcd9",
+            "subject": "Prepare neutral AUDIT-001 evidence dossier and isolated auditor package"
+          },
+          {
+            "head": "9af8366b49ee83bd280d7e06c9e0673fd3164cb1",
+            "subject": "activate AUDIT-001 architecture audit preparation"
+          },
+          {
+            "head": "5defa22402779f16e1c4e44257eafa5a46b3b99c",
+            "subject": "publish AUDIT-001 independent architecture audit preparation"
+          },
+          {
+            "head": "28844a4d94d10f380d343b0db1898c2edfd0d570",
+            "subject": "Audit SPEC-068 native atomic contracts and freeze narrow future manifests"
+          },
+          {
+            "head": "2fdadb5414ee61994404ba7e4c67f109033e3e15",
+            "subject": "activate SPEC-068 atomic judgment contract repair"
+          },
+          {
+            "head": "c67c2e1840e6c83a3c11fa3434e3722e2527cacd",
+            "subject": "publish SPEC-068 atomic judgment contract repair"
+          },
+          {
+            "head": "430bf3dc485c482ddf65fc932f0d4f6cbddfea9d",
+            "subject": "Record SPEC-067 atomic preflight conflict and zero-call evidence"
+          },
+          {
+            "head": "747b08f75d6699ecff0c9d8fcd0227d36fac3262",
+            "subject": "align SPEC-067 live call authority"
+          },
+          {
+            "head": "27eaae76abf32a1c17dea744ec0a9d5f5dc6827d",
+            "subject": "fix SPEC-067 live authority token"
+          },
+          {
+            "head": "6b37ba036b6e95dbb78ed63bd4cb396c46f2ef29",
+            "subject": "activate SPEC-067 semantic judge live evaluation"
+          },
+          {
+            "head": "bf1509ebd27bcc2700348317470b7aa44bb8d46a",
+            "subject": "publish SPEC-067 semantic judge live evaluation"
+          },
+          {
+            "head": "a86576eff6f1d67aa60bbdb031a613b645358048",
+            "subject": "Freeze SPEC-066 offline semantic validation boundary"
+          },
+          {
+            "head": "bf222b06370c8273957ee816a8c8cf071c68f6a1",
+            "subject": "activate SPEC-066 semantic validation boundary experiment"
+          },
+          {
+            "head": "f20d785c3e14affb1e1e347526d4afb5d19e2638",
+            "subject": "publish SPEC-066 semantic validation boundary experiment"
+          },
+          {
+            "head": "35a4f21025411c0acf43a9f1cb23b63e7544654c",
+            "subject": "Freeze SPEC-065 offline generative synthesis harness"
+          },
+          {
+            "head": "7d05ed9a40836871c6d0da60132069af1d53f800",
+            "subject": "activate SPEC-065 bounded generative synthesis harness"
+          },
+          {
+            "head": "7657c2a40f6f82086195e6d824dabb9160b901e9",
+            "subject": "publish SPEC-065 bounded generative synthesis harness"
+          },
+          {
+            "head": "df9b2a30bd1715f9cfbfec50728d25967154fdeb",
+            "subject": "Implement SPEC-064 offline abstraction diagnostic"
+          },
+          {
+            "head": "295130a2985bca06d1c9ddb2f63bf05a0532d75c",
+            "subject": "Revise and activate SPEC-064 architecture diagnostic"
+          },
+          {
+            "head": "8869de1c6969e3ff9ad91faeb5357452c3133066",
+            "subject": "Close SPEC-063 and draft architecture reset"
+          },
+          {
+            "head": "bcc6624ab893f84b25628d8a77a72de83c3812ea",
+            "subject": "Implement SPEC-063 cognitive representation experiment"
+          },
+          {
+            "head": "b9a8eb8e046963ea26e0623b63e415f8e267fb33",
+            "subject": "activate SPEC-063 cognitive representation experiment"
+          },
+          {
+            "head": "f3e245deb765e4d2c4acce7faf24fd2aa62ef745",
+            "subject": "publish SPEC-063 cognitive representation compilation"
+          },
+          {
+            "head": "2cf3483778da482e8bba6495416c76198c8dec72",
+            "subject": "Repair SPEC-062 owner review artifact"
+          },
+          {
+            "head": "12e75b89622ecbdf33b8741e6325a2ed9fd06d82",
+            "subject": "Implement SPEC-062 conceptual schema experiment"
+          },
+          {
+            "head": "af5bbe74ce99d9a7a325adbf45a988df4fe7fe39",
+            "subject": "activate SPEC-062 conceptual schema experiment"
+          },
+          {
+            "head": "2abfd7416ee315a2f0406cdde6adf93f6af28cbc",
+            "subject": "publish SPEC-062 conceptual chunking schema induction"
+          },
+          {
+            "head": "ca951e01bf14ebaa7f41427618988c46287af6fb",
+            "subject": "Run SPEC-061 explanatory structure experiment"
+          },
+          {
+            "head": "de6bf822349697bbfd7d730027a811d68273329b",
+            "subject": "activate SPEC-061 explanatory structure experiment"
+          },
+          {
+            "head": "ab5d69687188891d770c2ea63edfed0c38435292",
+            "subject": "publish SPEC-061 explanatory structure preservation experiment"
+          },
+          {
+            "head": "cd0f782aafdf47e7b99ca27a0b2da1982da4a98f",
+            "subject": "Run SPEC-060 progressive semantic compression experiment"
+          },
+          {
+            "head": "b2bf8829cc27306b808a6afd390bcd55d8c09ed9",
+            "subject": "activate SPEC-060 progressive semantic compression foundation"
+          },
+          {
+            "head": "38eedc69eba2db0f2528e04b371235f3ed087498",
+            "subject": "complete and tighten SPEC-060 contract"
+          },
+          {
+            "head": "75e2d613574d1839d45dc90acda3313bcb8085c4",
+            "subject": "publish SPEC-060 progressive semantic compression foundation"
+          },
+          {
+            "head": "c9e5687279beb2f471064363d795dad5bfd07493",
+            "subject": "Run SPEC-059 enriched prose experiment"
+          },
+          {
+            "head": "0015d5f5c2e75485622633bbc01724cf718ebf9b",
+            "subject": "activate SPEC-059 semantic typography enriched prose experiment"
+          },
+          {
+            "head": "d6fd40b711e2e603d018509026df10a871a83aa8",
+            "subject": "publish SPEC-059 semantic typography enriched prose experiment"
+          },
+          {
+            "head": "3023af58df6c32c857aa2e10fc64cc39aa02683d",
+            "subject": "Run SPEC-058 utility-gated learner review"
+          },
+          {
+            "head": "b13a99ed260c2a06efae1988ed0a79b6ccbf44ad",
+            "subject": "activate SPEC-058 utility-gated learner-surface A/B experiment"
+          },
+          {
+            "head": "38b4598e47dbb960b94b2cfe7cc0df87941c5ed1",
+            "subject": "publish SPEC-058 utility-gated learner-surface A/B experiment"
+          },
+          {
+            "head": "d3e43ee5d51cb57ed5d4ed17154f30e172a194f3",
+            "subject": "Run SPEC-057 cognitive utility gate"
+          },
+          {
+            "head": "7b0b15e2cd748bfcb6d437b283084b5b8040192f",
+            "subject": "activate SPEC-057 cognitive utility gate experiment"
+          },
+          {
+            "head": "140dc7da940e8ffb112db9c1d889a76461b1c2a9",
+            "subject": "publish SPEC-057 cognitive utility gate experiment"
+          },
+          {
+            "head": "61b8c115e03258d299b9d4ca78d3c35c8e3060ea",
+            "subject": "Run SPEC-056 claim learner surface experiment"
+          },
+          {
+            "head": "ab0a0ebf914eef6f3ba0dd414456dd42700a8926",
+            "subject": "activate SPEC-056 claim learner-surface binding experiment"
+          },
+          {
+            "head": "b60d53eaf17660f02a3488770ade8a43c6270ef2",
+            "subject": "publish SPEC-056 claim learner-surface binding experiment"
+          },
+          {
+            "head": "50184c29f8929800627c8e965db225fca0b06348",
+            "subject": "Run SPEC-055 claim strategy experiment"
+          },
+          {
+            "head": "f6e24b8429104cfe3ffc829d4388ba3e5c8ef940",
+            "subject": "activate SPEC-055 claim representation strategy experiment"
+          },
+          {
+            "head": "b4995645ec9d99698fdbc12ff8baecfe19fb031d",
+            "subject": "publish SPEC-055 claim representation strategy experiment"
+          },
+          {
+            "head": "c2533eeebd4588ddfc94e137c23bcf0dccb8268d",
+            "subject": "Run SPEC-054 claim focus experiment"
+          },
+          {
+            "head": "02f3fa99dc5fd96c5bf73208453d1faac1dbfda5",
+            "subject": "activate SPEC-054 claim focus selection experiment"
+          },
+          {
+            "head": "5f007e1496837cfae20f06dd49ae7759d26686d9",
+            "subject": "publish SPEC-054 claim focus selection experiment"
+          },
+          {
+            "head": "052ce49d5ee83a4ba25efa1f080ff3fec10d2ae3",
+            "subject": "Diagnose SPEC-053 claim representation coverage"
+          },
+          {
+            "head": "0c383e3c89f4701184d1589dac4a0f2c248d216a",
+            "subject": "activate SPEC-053 claim-to-representation diagnosis"
+          },
+          {
+            "head": "16144038f87946996ab343aae874bb70e8e4e92b",
+            "subject": "publish SPEC-053 claim-to-representation diagnosis"
+          },
+          {
+            "head": "31922f33fea02815c0f78719abc2eebc15977009",
+            "subject": "Execute SPEC-052 Candidate B v2 live evaluation"
+          },
+          {
+            "head": "94762017024a6993a562f076a7efe4232df909a3",
+            "subject": "activate SPEC-052 Candidate B v2 live evaluation"
+          },
+          {
+            "head": "c1e2958d91e6905c5bf2bea2d96d210b7b6aa2fa",
+            "subject": "complete SPEC-052 live evaluation packet"
+          },
+          {
+            "head": "68e98dae8b8589b10fd43c70e0a6fd82f71c2e1b",
+            "subject": "publish SPEC-052 Candidate B v2 live evaluation"
+          },
+          {
+            "head": "c4dd79d002871a28e8b791a7b70d9fab445b5a18",
+            "subject": "Implement and freeze SPEC-051 Candidate B v2 offline"
+          },
+          {
+            "head": "87cae5f2059e649adb3a2268574699af4615f2f2",
+            "subject": "activate SPEC-051 schema-constrained Candidate B v2"
+          },
+          {
+            "head": "d37f79a3c1908c63f61cbe236ffd047ff75cbdea",
+            "subject": "publish SPEC-051 schema-constrained Candidate B v2"
+          },
+          {
+            "head": "bcd329b8ef1a3694ea5fdd1943ba975c578643d3",
+            "subject": "Diagnose SPEC-050 semantic proposition coverage"
+          },
+          {
+            "head": "bd51325b1bbb4c330ed7a98ef30425f4c71590a7",
+            "subject": "activate SPEC-050 proposition semantic coverage diagnosis"
+          },
+          {
+            "head": "f940620dc840fc562fa8ad301e4cc18707d8471f",
+            "subject": "publish SPEC-050 proposition semantic coverage diagnosis"
+          },
+          {
+            "head": "0c2fa657a5c448c9612b0d109cd27a462418a90b",
+            "subject": "Diagnose SPEC-049 proposition contract failures"
+          },
+          {
+            "head": "93bc23c42a66198b059ba20789849e68c61dcaf2",
+            "subject": "activate SPEC-049 Stage-2 proposition diagnosis"
+          },
+          {
+            "head": "241a7b3c6b9d0158a4ae27b5f9f50cbafe981dfc",
+            "subject": "publish SPEC-049 Stage-2 proposition contract diagnosis"
+          },
+          {
+            "head": "e8f9e8687e7532b7ab0055aced877f0fa2dadd59",
+            "subject": "Execute SPEC-048 decomposed extraction A/B evaluation"
+          },
+          {
+            "head": "876250f1735890db0b156ec429a5422e804a2552",
+            "subject": "activate SPEC-048 decomposed extraction live A/B execution"
+          },
+          {
+            "head": "b0cecf1a6692f2e614e3228fd400411282ba1b67",
+            "subject": "publish SPEC-048 decomposed extraction live A/B execution"
+          },
+          {
+            "head": "9ad5e0854e6866c73b3f6febd989e0766cc14a13",
+            "subject": "Implement SPEC-047 decomposed extraction harness"
+          },
+          {
+            "head": "c5552154459ba6e9fbd677292b77cf2491f01ff2",
+            "subject": "activate SPEC-047 decomposed extraction A/B harness"
+          },
+          {
+            "head": "996f4323734f980e4bbb53cb0cfe9d40b4687394",
+            "subject": "publish SPEC-047 decomposed extraction A/B harness"
+          },
+          {
+            "head": "51781238e561c06955e527115f59adaa0ae3de07",
+            "subject": "Analyze SPEC-046 extraction failure modes"
+          },
+          {
+            "head": "fc433a1788cacd755cb02d5be1158818363e9c56",
+            "subject": "activate SPEC-046 extraction reliability analysis"
+          },
+          {
+            "head": "87d2dda31c68059cb5d5479382c9baa55078c71c",
+            "subject": "publish SPEC-046 extraction reliability analysis"
+          },
+          {
+            "head": "5180f932bf4ab259236b84610cb81eba565d3e4a",
+            "subject": "Record SPEC-045 blind replication evaluation"
+          },
+          {
+            "head": "20548a6a6fc5ff4dc592c6feade6f91f4c539422",
+            "subject": "activate SPEC-045 blind replication execution"
+          },
+          {
+            "head": "ea568b1b55238fcd27438018fae40fc9b99ee592",
+            "subject": "publish SPEC-045 blind replication execution"
+          },
+          {
+            "head": "7c0dfddd8599e94c3ddeecabca5cde01241f3201",
+            "subject": "Freeze SPEC-044 blind replication source set"
+          },
+          {
+            "head": "77e084013b2029b72036a95b2ebbdc701d5d372b",
+            "subject": "activate SPEC-044 replication source freeze"
+          },
+          {
+            "head": "bfae538eea11b6bba6c78bcd02d9a7383852655e",
+            "subject": "activate SPEC-044 blind replication source-set freeze"
+          },
+          {
+            "head": "0985aa34533dec52b2e28c9c496dee6b1f2a42bb",
+            "subject": "Diagnose SPEC-042 blind failures"
+          },
+          {
+            "head": "2d28ce8a89b5bd7ec009c9b28239574ed2632aed",
+            "subject": "activate SPEC-043 blind failure diagnosis"
+          },
+          {
+            "head": "d1e78c989a18dad064edd75687d0629d5e040002",
+            "subject": "add SPEC-043 blind failure diagnosis packet"
+          },
+          {
+            "head": "0af6cf593aaf23686ce7e262730e2ed29551cab5",
+            "subject": "Record SPEC-042 blind live evaluation"
+          },
+          {
+            "head": "f4d77b198459c4a3f88c7bcf4e301284be3d9fde",
+            "subject": "activate SPEC-042 blind live execution"
+          },
+          {
+            "head": "c50233261b398d5f902431d17c72792fa031b413",
+            "subject": "publish SPEC-042 blind live execution"
+          },
+          {
+            "head": "794c85a1f7f0773cc7bbda9a9a380240adf671b9",
+            "subject": "Freeze SPEC-041 blind source packet"
+          },
+          {
+            "head": "a8c6a8abe807233ff2cc5b5552c848d0b6e89a3f",
+            "subject": "activate SPEC-041 blind source freeze"
+          },
+          {
+            "head": "e3bcac2d60b3aa4bc3d95dc4dbff389befae90df",
+            "subject": "add SPEC-041 blind source set freeze packet"
+          },
+          {
+            "head": "3d5c2dfbaef19e61403f5a888c75b381f383653c",
+            "subject": "Record frozen SPEC-040 harness evidence"
+          },
+          {
+            "head": "5622df131dc71346d5890f42ce16fe1e3e55f33a",
+            "subject": "Implement SPEC-040 blind evaluation harness"
+          },
+          {
+            "head": "6e7d761f81f25de1ba8aa59961736d6de4930146",
+            "subject": "activate SPEC-040 blind evaluation harness"
+          },
+          {
+            "head": "13cdc9e3c572bc1a02ce322b3a2c72fafb7ee6b7",
+            "subject": "add SPEC-040 blind out-of-sample evaluation harness"
+          },
+          {
+            "head": "a192bd901ae2e550e58fcb8da6961726f4739a94",
+            "subject": "record SPEC-039 owner verdict"
+          },
+          {
+            "head": "4717151d2ab9660fffb233741659893ced835603",
+            "subject": "Implement SPEC-039 semantic representation compiler gate"
+          }
+        ],
+        "truncated": true
+      },
+      "review_due": {
+        "state": "REVIEW_CANDIDATE",
+        "facts": [],
+        "candidates": [
+          {
+            "code": "PRIOR_GOVERNOR_FOLLOW_UP_REQUIRES_ASSESSMENT",
+            "classification": "REVIEW_CANDIDATE",
+            "kind": "CONSTRAINT",
+            "evidence": "Do not resume atomization/semantic-judge work unless the benchmark later demonstrates that semantic machinery earns its complexity.",
+            "limitation": "A constraint, next boundary or conditional follow-up is not proof that review is due now"
+          },
+          {
+            "code": "HUMAN_GATE_TEXT",
+            "classification": "REVIEW_CANDIDATE",
+            "evidence": [
+              {
+                "heading": "Current approved work packet",
+                "line": "Human gate: `OWNER_REVIEW`"
+              }
+            ],
+            "truncated": false,
+            "limitation": "Literal text may be historical, conditional, contradictory, or a prohibition"
+          },
+          {
+            "code": "WORK_PACKET_TEXT",
+            "classification": "REVIEW_CANDIDATE",
+            "evidence": [
+              {
+                "heading": "Current approved work packet",
+                "line": "specs/BENCH-001-ia001-benchmark-execution-readiness.md"
+              },
+              {
+                "heading": "Current gate",
+                "line": "BENCH-001 is authorized to make the frozen independent benchmark executable **before any benchmark source is selected or exposed**."
+              },
+              {
+                "heading": "Current gate",
+                "line": "BENCH-001 must freeze prompts/schemas, common model policy, executables/dependencies, neutral renderer, budgets, failure semantics, metrics, source-selector handoff, fidelity-review contract, blinding/custody tooling and learner-review templates."
+              }
+            ],
+            "truncated": false,
+            "limitation": "Literal text may be historical, conditional, contradictory, or a prohibition"
+          }
+        ],
+        "unknowns": [
+          "ACCEPTED_REVIEW_HEAD_UNKNOWN: movement since GOV-004 cannot be counted",
+          "ACCEPTED_STATUS_UNKNOWN: transition since accepted review cannot be proven"
+        ],
+        "follow_up_evidence": "Do not resume atomization/semantic-judge work unless the benchmark later demonstrates that semantic machinery earns its complexity."
+      }
+    },
+    {
+      "id": "opportunity-radar",
+      "name": "Opportunity Radar",
+      "repository": "CIF84/opportunity-radar",
+      "constitution_path": "constitutions/opportunity-radar.md",
+      "authoritative_status_path": "docs/STATUS.md",
+      "evaluated_head": "69dececcfa78276731a07fabab63e504cd7392c5",
+      "status_sha256": "e80af96df3c94c5d3240e972f74fc0a945ffede141db099ca802d4af1f4ded7d",
+      "tracked_worktree_dirty": true,
+      "tracked_worktree_status_sha256": "a478700ed4aee0b236039613fd12f6ed14dbbf24db7822f6b954e60e5e3fdfae",
+      "evidence_timestamp": "2026-10-08T09:31:32+00:00",
+      "project_gate_state": {
+        "classification": "VERBATIM_OBSERVATION_REQUIRES_REVIEW",
+        "excerpts": [
+          {
+            "heading": "Preamble",
+            "text": "# Opportunity Radar — Current Status\n\nThis is the authoritative repository handoff. Operational counts are derived by\n`opportunity-radar-status`; this file records current direction, frozen policy,\nand the next approved work packet."
+          },
+          {
+            "heading": "Current approved work packet",
+            "text": "```text\nspecs/phase4/SPEC-025-epoch2-bootstrap-and-kraken-ashby.md\n```\n\nStatus: `APPROVED_FOR_IMPLEMENTATION`.\n\nLatest bounded continuation (2026-10-08):\n`LOCAL_REPAIRS_READINESS_PASS_AWAITING_OWNER_REVIEW`. Owner authorized only the\nKiwi/Schneider/Keboola diagnosis and local generic repair/readiness. Attempt 003\nis privately classified `ABORTED_BASELINE_THREE_SOURCE_FAILURES`, byte-unchanged\nat `a003ac6d34bc8d498f9d00930a5d1385542b9cd6a48d496e9fe50e81a0a4155a`;\nit cannot be resumed, migrated, overwritten or used for reuse/lifecycle.\nKiwi's secondary detail UUID incorrectly replaced URL identity; locally repaired\ngeneric extraction passes 5/5. Schneider relevance pagination repeats two exact\nboundary rows; source-advertised date sorting plus strict generic duplicate/count\nguards passes 3,605 unique identities and an empty terminal probe. Keboola's stale\ntitle selector hides two existing Lever jobs; the unfiltered public JSON feed\nand complete section projection pass 2/2. These are local source-window findings,\nnot promoted runtime policy or an atomic inventory guarantee.\nOne hundred bounded GETs; zero operational/manifest writes, models or actions.\nAll surviving pre-existing evidence remains byte-identical; durability unchanged.\nNo Attempt 004, bootstrap continuation, Snapshot 2, commit/push or canonicalization\nis authorized. Stop for review. See `docs/remaining_source_diagnosis.md` and\n`output/epoch2_recovery/spec025-remaining-sources-20261008/aggregate_summary.json`.\n\nPrevious execution (2026-10-08): `ATTEMPT_003_COLLECTED_PARTIAL_AWAITING_OWNER_REVIEW`.\nAll 23 employers / 24 required surfaces were attempted: 20 complete baseline\npasses and three failures. Kiwi has complete inventory but five identity-guard\ndetail failures; Schneider inventory failed duplicate-identity validation;\nKeboola failed unvalidated-empty extraction. Twenty-two required inventories\npass; two fail. No employer/surface was dropped or waived.\nThe private schema-4 candidate contains 15,488 first-observed identities and\n3,744 fresh details (3,749 attempts / five failures; 423 local / 3,326 network\ndetail operations). Integrity/foreign keys and partial-state reconciliation pass;\nfull baseline fails. Zero imports/reuse/cross-gap closures/changes/models/actions.\nSAP passes 755 legacy + 125 public feed = 880 namespaced postings. EY converges\non pair 1/2 at 8,754 identities each, delta 0/0, 706 requests / 233.900 seconds;\nall 2,102 selected details succeed. Kraken has 83 identities and 33 jobs preserving\nexplicit Czech Republic evidence. Overall 4,361 HTTP attempts / 1,423.186 seconds.\nAttempt 003 remains noncanonical diagnostic evidence, run `PARTIAL`; it was not\nregistered as future canonical state. The primary manifest is byte-unchanged\nand durability stays `BLOCKED`. All 4,021 pre-existing private/local files match\ntheir before-run hashes, including both aborted candidates and the historical DB.\nStop for owner review of the three failures. No repair, new attempt, further\nsource calls, Snapshot #2 or canonicalization is authorized by this result.\nEvidence: `output/epoch2_recovery/spec025-attempt003-20261008/aggregate_summary.json`;\nhandoff: `docs/epoch2_recovery_handoff.md`.\n\nOwner continuation (2026-10-08): `ATTEMPT_003_AUTHORIZED` on canonical\nbase `69dececcfa78276731a07fabab63e504cd7392c5`. Reconcile/test bootstrap remnants,\nthen collect all 23 employers / 24 required surfaces into a new empty private\nschema-4 candidate, with isolated failures and no historical/aborted imports.\nContinue independent collection after failure, but fail full baseline and\ncanonicalization unless every required employer/surface and integrity gate passes.\nSuccessful full validation alone permits private candidate registration requiring\nnew durability verification; failure preserves diagnostic evidence without\nmanifest changes. Stop before Snapshot #2/canonicalization, with zero models or\napplication actions and no commit/push. Earlier execution/readiness notices below\ndescribe their historical authority; they do not override this continuation.\n\nPhase A status: `IMPLEMENTED_OWNER_REVIEWED_ACCEPTED` (2026-10-07).\nThe independently approved implementation `ee2150c04846d200eee0d621c335297d6496cfeb`\nwas fast-forwarded from `review/spec-025-ashby-kraken-readiness` into `main`\nwithout implementation changes.\n\nSAP source-contract status: `IMPLEMENTED_OWNER_REVIEWED_ACCEPTED` (2026-10-07).\nApproved implementation `27967d903f0cec2f0cee737a43f4301ec5628348` was\nfast-forwarded unchanged from `review/spec-025-multisurface-source-contract`\ninto `main`; schema 4 source-surface identity is accepted.\nExecution state: `ATTEMPT_002_STOPPED_SOURCE_COMPLETENESS_GATE`.\nLatest continuation: `EY_ACTIVATION_READINESS_IMPLEMENTED_OWNER_REVIEWED_ACCEPTED` (2026-10-08).\nOwner authority separately activates the accepted mechanism for EY only using\nthree attempts, 1,100 requests and 360 seconds, then validates one bounded\nproduction listing invocation. No other source is activated; no new epoch\nattempt, details, operational/manifest writes or durability transition is\nauthorized. See `docs/ey_convergence_production_readiness.md` (DR-034).\nExecuted result: `CONVERGENCE_VALIDATED`, exact pair 1/2, 8,721 advertised/unique\nidentities on both passes, zero identity delta and stable boundaries. Total\n702 requests / 222.598 seconds; traversal 3 not started. All existing guards\npassed. Protected hashes and all 2,601 pre-existing private/local files are\nunchanged. Full offline suite: 568 passed, 8 skipped, 23 deselected. Owner review\naccepts EY activation/readiness; commit/push only the associated safe change set,\nthen stop. No attempt 003, details, operational/manifest write, durability change\nor source/model/application action follows.\n\nPreserved mechanism-acceptance and experimental baseline:\nThe owner-authorized bounded experiment used the immutable October 7 diagnosis\nas its baseline. Two consecutive independently reconciled EY traversals each\nreturned 8,637 identities with the same advertised total and stable immediate\nboundary rechecks; full identity-set delta was zero. It stopped after pair 1/2,\n696 listing requests and 201.334 seconds, before a third traversal. The pure\nexperimental validator passed 25 focused tests; the full offline suite passed\n520 tests (8 skipped, 23 live tests deselected). All 1,185 pre-existing private/\nlocal files and both aborted candidates remain byte-identical. No operational/\nmanifest writes, detail/model calls or runtime policy promotion occurred.\nSee `docs/mutable_inventory_convergence_validation.md` and its sanitized receipt.\nIndependent review is owner-approved, including `5bad455a74ccd1ecbe6534304caadd21dab76cf6`. The\nreview branch was fast-forwarded unchanged into `main`; the generic opt-in\nmechanism is accepted, not source activation. Existing single-pass guards,\nexact adjacent total/set equality and stable boundaries remain mandatory.\nElapsed time is an evidence-admission boundary, with immediate post-response\nchecks; retries/redirects are disabled during convergence and transport restored.\nAt that closure, source activation and any new candidate strategy remained\nseparate gates and no configured source was activated. The subsequent EY-only\nauthorization above permits bounded listing readiness, not a new candidate.\nDurability remains `BLOCKED`; no model or operational writes.\n\nPreserved October 7 diagnosis:\nThe owner permanently classified attempt 002 `ABORTED_SOURCE_COMPLETENESS_EY`;\nits original bytes/metadata remain unchanged. Two bounded listing-only traversals\nreproduced public inventory-view churn (8,618 to 8,589); later boundary probes\nreported 8,619 then 8,589. Totals and native identity sets changed, with no numeric\nrange gaps/duplicates or demonstrated parser error. Actual publication mutation\nversus backend/index inconsistency remains unresolved. The existing production\nguard correctly rejects the unstable pass. At that historical gate the generic\nbounded convergence contract was proposed, not implemented/promoted. Total requests: 705; zero details, SQLite/\nmanifest writes or model calls. See `docs/ey_mutable_inventory_diagnosis.md`.\nThe owner has accepted the fresh-candidate strategy on canonical base\n`08d8fc97aadd68dbff2cec3aa1e4f0b556c57d70`. Attempt 001 is permanently\n`ABORTED_EPOCH2_BOOTSTRAP_PRE_SCHEMA4` / `OPERATIONAL_EPOCH_2_ATTEMPT_001`:\npreserve its bytes and never migrate, resume, import or use it operationally.\nThe authorized fresh `OPERATIONAL_EPOCH_2_ATTEMPT_002` starts empty in schema 4\nat a distinct nonexistent external path, with no historical imports or detail\nreuse. Reconciled bootstrap machinery passed 484 offline tests before live work.\nThe fresh run stopped at EY: `CountMismatchError`, advertised total changed\nduring pagination. Eleven employers / twelve required surfaces passed; one\nemployer / surface failed; eleven employers / surfaces were not attempted.\nAttempt 002 is `PARTIAL`, with 3,692 fresh identities and 1,194 successful details.\nSAP passed both required surfaces (758 legacy + 110 public feed = 868 postings);\nKraken passed with 85 identities and 34 jobs preserving Czech Republic evidence.\nLocal integrity/reconciliation passes; the full 23-employer / 24-surface baseline\ndoes not. The partial database is noncanonical and must not be resumed without\nseparate authority. The primary manifest is unchanged and its gate is `BLOCKED`;\nattempt 002 was not registered because full validation did not pass.\nThis continuation authorizes no model calls, application actions, commit/push,\nbackup or canonicalization. See the latest continuation in SPEC-025.\nGeneric Ashby/Kraken readiness passed with 86 stable unique identities, 86 local\ndetail normalizations, 51 multi-location jobs and 34 jobs preserving explicit\nCzech Republic evidence. At Phase A acceptance the portfolio was 23 sources /\neight families; the accepted SAP continuation now represents 23 employers /\n24 required surfaces / nine adapter families.\nThe owner-selected external private root now contains nine byte-verified copies\nand the rewritten canonical durability manifest. All seven human-irreplaceable\nartifacts and the historical database retain Snapshot #1 restore provenance.\nRead-only Phase B preflight passes with no blockers; all old copies remain\nbyte-identical recovery duplicates. Private paths are recorded only privately.\nPhase B is owner-reviewed/accepted. Historically, under C–F-only authorization,\nan empty schema-v3 `OPERATIONAL_EPOCH_2` candidate was created. Bootstrap stopped\nimmediately at SAP's unvalidated empty extraction: ten sources passed, one failed,\nand twelve were not attempted. The partial candidate contains 2,794 identities\nand 1,137 fresh detailed observations; SQLite integrity/reconciliation and zero\ncross-gap closure/change checks pass, but the full baseline gate fails.\nThe candidate is not canonical, and its required new recovery evidence makes\nthe durability gate `BLOCKED`. No historical/candidate/semantic state was imported.\nRequired handoff:\n`docs/epoch2_recovery_handoff.md`.\n\nSPEC-025 remains active. Convergence mechanism review is accepted, EY-only\ndeclarative activation/readiness is separately authorized, and any fresh-candidate\ncontinuation remains gated. No new bootstrap is authorized by this continuation.\nOwner-authorized bounded SAP diagnosis (2026-10-07) found a migration redirect:\nthe configured legacy Czech-category URL now serves a new Next.js listing, while\nSAP explicitly retains jobs on its old SuccessFactors site. This is not a confirmed\nempty inventory. A generic listing-route pagination repair was locally tested.\nAt that diagnosis, SAP production configuration remained unchanged because\nlegacy-only coverage was unproven. Eight public HTTP requests, zero details/model/operational writes;\nthe partial candidate and all protected evidence remain byte-identical.\nDiagnosis receipt: `output/epoch2_recovery/spec025-sap-diagnosis-20261007/aggregate_summary.json`.\nThe subsequent owner-authorized coverage investigation reproduced current website\ncounts 94 / 756 and found that the new English website omits 12 public feed postings.\nUnfiltered new publishing feed 106 + complete retained-session legacy 756 yields\n862 exact posting identities, without a proven shared cross-system requisition key.\nThe failed fresh-session legacy probe is retained as incomplete evidence. Generic\nmulti-surface composition and stronger source-count guards were proposed at that gate.\nSee `docs/sap_complete_coverage_validation.md` and its sanitized receipt. Eighty-eight\nsource HTTP requests, zero operational writes/model calls; all prior evidence remains\nunchanged. Its implementation-review gate and fresh-strategy owner gate have\nsince passed. The failed attempt was never resumed; attempt 002 is a fresh baseline.\nThe subsequent owner-authorized source-contract implementation/readiness now passes:\nlegacy SuccessFactors 756/756, unfiltered SmartRecruiters 106/106, union 862 exact\nnamespaced postings, three normalized detail probes and one ID-route URL probe.\nThirty-seven HTTP requests, zero retries/operational writes/model calls. The generic\npagination repair passes both configured pagination modes and retained-session\nregressions. Schema 4 is owner-reviewed/accepted for surface-scoped identity and\nJSON surface receipts; the protected partial schema-3 candidate is unchanged at\n`63cb7e3924da701fe2ac6bb318f6a03766eedb25fdd0af31aeaf44b3ee7d4b4c`.\nIt is **aborted evidence**, not a migration/resumption target. SAP's required\nsurfaces are legacy SuccessFactors plus the unfiltered SmartRecruiters public\nfeed; real-world cross-system opportunity overlap remains unresolved. No\nrequisition/title/location fuzzy deduplication is authorized. At source-contract\nclosure, fresh-strategy authority was still pending; it is now separately granted\nfor attempt 002 only, not by source readiness itself.\nAt source-contract closure durability remained `BLOCKED` by attempt 001.\nThe approved fresh strategy allowed in-memory preflight supersession only;\nattempt 002 failed, so no primary-manifest supersession or candidate registration\nwas performed. No old-candidate migration/resumption or source removal is authorized.\nDo not weaken/drop a source, rerun against either existing candidate, create Snapshot #2,\ncanonicalize, or make further source/model calls without a bounded continuation.\nPhase G/H were not entered. Historical/private evidence and Phase B receipts\nremain unchanged; the prior external manifest is retained byte-for-byte.\n\nSPEC-025 is the only active implementation packet. It first adds and validates\na generic Ashby source contract with Kraken as a declarative source, then may\nestablish an Operational Epoch 2 candidate database from complete fresh\ninventories after all preflight gates pass. Kraken source readiness is a hard\nprecondition: Epoch 2 must not knowingly bootstrap without Kraken coverage.\n\nSPEC-025 explicitly authorizes the bounded live-source calls and operational\nwrites described by its gates. It authorizes zero semantic/model calls and zero\napplication actions. Epoch 2 must preserve the permanent unobserved gap and\nmust infer no lifecycle continuity, closure, or change across it. A successfully\nbootstrapped Epoch 2 database remains non-canonical until its integrity,\ncompleteness, and accepted off-device backup/restore evidence pass independent\nreview."
+          },
+          {
+            "heading": "Current gate",
+            "text": "> Generic convergence and EY-only declarative activation/readiness are\n> owner-reviewed/accepted. Stop after the authorized activation closure.\n> Separate fresh-candidate authority and updated configuration/portfolio\n> preflight remain required. Do not start another work packet or activate\n> another source. Preserve both aborted databases, historical evidence and\n> classifications. Do not resume either attempt, create attempt 003, perform\n> operational/manifest writes, change durability, create Snapshot #2, call a\n> source/model or perform an application action. Durability remains `BLOCKED`.\n> Observed-window convergence is not server atomicity.\n\nFrozen operational-recovery statuses:\n\n- real private-state durability: `RESTORE_VERIFIED` for all nine inventoried artifacts;\n- attempt 001: `ABORTED_EPOCH2_BOOTSTRAP_PRE_SCHEMA4`, historical-only partial baseline;\n- attempt 002: `ABORTED_SOURCE_COMPLETENESS_EY`, original noncanonical `PARTIAL` evidence preserved;\n- current durability gate: `BLOCKED`; accepted owner strategy may supersede only\n  the obsolete attempt-001 candidate requirement, never grant restore verification;\n- real off-device backup/restore: `CONTAINER_AND_ARTIFACT_RECOVERY_VERIFIED`;\n- recovered `66dba4...` database: `HISTORICAL_READ_ONLY`;\n- lost `a07d5300...` state: `LOST_OPERATIONAL_STATE`.\n\nSnapshot #1 is an owner-authorized age-encrypted iCloud container whose\nencrypted hash survived a remote round trip and whose isolated restore was\nowner-confirmed. The retained restored Documents tree allowed Opportunity Radar\nto independently verify all nine private-manifest artifacts: seven\n`HUMAN_IRREPLACEABLE`, one `MACHINE_EXPENSIVE`, and the `HISTORICAL_READ_ONLY`\ndatabase. All eight gate-required artifacts pass. Container containment alone\nremains insufficient; each passing artifact has its own restored SHA-256 match.\n\nThe encrypted multi-artifact container extension and bounded Snapshot #1\nverification are owner-reviewed and accepted. They authorize no new\noperational behavior and do not reopen or create another work packet.\n\nNo runtime credential/stretch policy change, semantic spend, autonomous application\naction, Git-history rewrite, or hosted multi-user infrastructure is authorized."
+          }
+        ]
+      },
+      "last_governor_review": "reviews/GOV-004.md",
+      "last_allocation": "allocations/CYCLE-009.md",
+      "governor_verdict": {
+        "source": "reviews/GOV-004.md",
+        "status": "LAST_ACCEPTED_NOT_REEVALUATED",
+        "text": "**CONTINUE RECOVERY.**\n\nA fresh-candidate strategy remains the next meaningful boundary after accepted EY readiness."
+      },
+      "material_strategic_debt": {
+        "source": "reviews/GOV-004.md",
+        "status": "LAST_ACCEPTED_NOT_REEVALUATED",
+        "text": "- fresh complete schema-4 candidate across 23 employers / 24 required surfaces;\n- integrity review;\n- new candidate backup/restore;\n- canonical Operational Epoch 2;\n- prospective ranking validation;\n- application/interview/offer outcomes."
+      },
+      "history": {
+        "scope": "RECENT_CONTEXT_ONLY_BASELINE_UNKNOWN",
+        "baseline": null,
+        "commits": [
+          {
+            "head": "69dececcfa78276731a07fabab63e504cd7392c5",
+            "subject": "Activate bounded EY inventory convergence"
+          },
+          {
+            "head": "870ba6eb8129676e10b5d98fb8160c27608cb697",
+            "subject": "Accept bounded mutable inventory convergence"
+          },
+          {
+            "head": "5bad455a74ccd1ecbe6534304caadd21dab76cf6",
+            "subject": "Enforce convergence response deadline admission"
+          },
+          {
+            "head": "5f80c0f9a4f2af72cf7838656110ebe3498457aa",
+            "subject": "Add bounded mutable inventory convergence"
+          },
+          {
+            "head": "08d8fc97aadd68dbff2cec3aa1e4f0b556c57d70",
+            "subject": "Accept SAP multi-surface source contract and schema 4"
+          },
+          {
+            "head": "27967d903f0cec2f0cee737a43f4301ec5628348",
+            "subject": "Implement SPEC-025 multi-surface source contracts"
+          },
+          {
+            "head": "c68f15307fb76f99f4e07ee577007581304472d9",
+            "subject": "Accept SPEC-025 Phase A source readiness"
+          },
+          {
+            "head": "ee2150c04846d200eee0d621c335297d6496cfeb",
+            "subject": "Validate SPEC-025 Ashby and Kraken source readiness"
+          },
+          {
+            "head": "50a3a7e473ed67764fd601a883b23893a9cb5e8f",
+            "subject": "activate SPEC-025 in authoritative status"
+          },
+          {
+            "head": "03c6140857ee5b148f3045fe402c867af900c06f",
+            "subject": "promote SPEC-025 as active recovery packet"
+          },
+          {
+            "head": "16423fb74e81bc41eed027acb447d4972786ae98",
+            "subject": "add SPEC-025 Epoch 2 and Kraken Ashby recovery packet"
+          },
+          {
+            "head": "a0756283f614dd9bd1addeacdf063a24e295d9a8",
+            "subject": "Close SPEC-024 container durability verification"
+          },
+          {
+            "head": "15a82205881b0cc68536e04c5604e56f04b5f88a",
+            "subject": "Extend SPEC-024 container durability verification"
+          },
+          {
+            "head": "aba91bb5513f93f4c26dd9f316671910dd88acc3",
+            "subject": "Close SPEC-024 durability mechanism review"
+          },
+          {
+            "head": "df7fcb1f7696f5dbf7a1f9cd162f4429e1eac6ba",
+            "subject": "Fix off-device durability qualification"
+          },
+          {
+            "head": "1a102b052b4e90d1871f51f97d30a35fae02f77a",
+            "subject": "Implement private state durability controls"
+          },
+          {
+            "head": "e870212567547bff60d7c8d51c864af070476cab",
+            "subject": "promote SPEC-024 as active work packet"
+          },
+          {
+            "head": "565cc9dd4d0419465b47d56774b095a31ba1e920",
+            "subject": "add approved SPEC-024 private state durability"
+          },
+          {
+            "head": "34b3ff04b06663560d6b15e6f14bd2596d9b8258",
+            "subject": "Close SPEC-023 with operational loss qualification"
+          },
+          {
+            "head": "e35b465639e5cd1db119f7df2c59481f61afd306",
+            "subject": "Fail closed on implicit synthetic operational candidate"
+          },
+          {
+            "head": "9f516b7d37b34267d7ce7f8866702ee44cd717b8",
+            "subject": "Implement SPEC-023 private candidate boundary"
+          },
+          {
+            "head": "71d6cd456d97a553063ee5f16ed00223360152cf",
+            "subject": "approve SPEC-023 privacy boundary implementation"
+          },
+          {
+            "head": "4c0fc83c1a53212a1778a6a7093cd63012271485",
+            "subject": "close SPEC-022 and approve SPEC-023"
+          },
+          {
+            "head": "27565da3ecf5be4944b1a42b3009da2374429832",
+            "subject": "Implement shadow credential compatibility replay"
+          },
+          {
+            "head": "8176c1f58ecbce817d9769bad329903df60cbc75",
+            "subject": "add draft private candidate boundary spec"
+          },
+          {
+            "head": "3ba3dafbff6bba95df9b92d50ad72de52a0bf5d3",
+            "subject": "Approve shadow credential compatibility replay"
+          },
+          {
+            "head": "ddf84f0bc79baaa2511ae00569be4b893e7cf3e9",
+            "subject": "Define shadow credential compatibility replay"
+          },
+          {
+            "head": "9e94eb14093e254c1ea7ef3f15074591364aae68",
+            "subject": "Validate frozen credential evidence semantics"
+          },
+          {
+            "head": "504fa25247cb0ae3a2b5d5cfbeab295432951104",
+            "subject": "Prepare frozen credential evidence semantics validation"
+          },
+          {
+            "head": "91a3a26e99f41bb6a0048c9066e9f9fe110ec67e",
+            "subject": "Approve frozen credential evidence semantics v2"
+          },
+          {
+            "head": "d7f2e897f7b25f6fe12eb472662fe1fc39b0b23f",
+            "subject": "Define frozen credential evidence semantics v2"
+          },
+          {
+            "head": "676647bb24a7f88b23c334d74e904cd8444f840c",
+            "subject": "Terminate source-decay-confounded credential validation"
+          },
+          {
+            "head": "9b68cee253d443b6c68ed6b5c166c07a84788b5e",
+            "subject": "Prepare credential semantics human validation"
+          },
+          {
+            "head": "559144258608825bdbc746691c37da041bb2fc82",
+            "subject": "Audit stretch evidence boundaries"
+          },
+          {
+            "head": "af05443759163411381d41f1eaf0c3f0cf29fdb5",
+            "subject": "Advance to credential semantics human validation"
+          },
+          {
+            "head": "589778a518bad0ada2d0555f94cc3b293d8f7df0",
+            "subject": "Define credential semantics human validation"
+          },
+          {
+            "head": "bc14a53c12bc6e8d3ce9a18caecefad3512bff5c",
+            "subject": "Advance to stretch evidence boundary audit"
+          },
+          {
+            "head": "e063f6f05840bea7374bc868e3815d6c0571f947",
+            "subject": "Define stretch evidence boundary experiment"
+          },
+          {
+            "head": "34fdd1b601309a025ec72af6a4275f1dcfc72dde",
+            "subject": "Promote bounded candidate direction preference"
+          },
+          {
+            "head": "e81b83781b9f4475da85be782e04ceaf582f623e",
+            "subject": "Advance to candidate direction promotion audit"
+          },
+          {
+            "head": "777a211aa10e3121b8668bbc7b8e3a38fd0915ea",
+            "subject": "Define candidate direction promotion audit"
+          },
+          {
+            "head": "1871a082874f27db606796fc06e348fbee71776c",
+            "subject": "Fix partial geography market semantics"
+          },
+          {
+            "head": "e94d7ddf463ecbd7666de471a9e80a151ea9c1cc",
+            "subject": "Advance to partial geography semantics audit"
+          },
+          {
+            "head": "ba62e9a0dc3462e75bdd9e2be53869c03e6503fc",
+            "subject": "Define partial geography semantics audit"
+          },
+          {
+            "head": "556fd7aec5d77874f56d7a5b5137a06a75fbfbca",
+            "subject": "Integrate declarative nested feeds and Mews"
+          },
+          {
+            "head": "76693b9a2ba371de1d8ccdddecd8536cd14116bc",
+            "subject": "Advance to Mews nested-feed experiment"
+          },
+          {
+            "head": "e1ccfa04768cbd4979eff414f4442810a39eff43",
+            "subject": "Define Mews nested-feed extension experiment"
+          },
+          {
+            "head": "541685ce40e959a66d2ec443b6ef748190713bb1",
+            "subject": "Onboard bounded Wave A production sources"
+          },
+          {
+            "head": "0ca0de5052e8b50d356ed5ee593959952f615ef6",
+            "subject": "Advance to bounded production source onboarding"
+          },
+          {
+            "head": "dd556c35db939308dae139f22a00c1a4a168f9c3",
+            "subject": "Define bounded production source onboarding experiment"
+          },
+          {
+            "head": "11e000825e339de8c772d5bd7a66e2567469f1b2",
+            "subject": "Run Wave A source-contract preflight"
+          },
+          {
+            "head": "aa76bbc6a5b7526e44a053bdc740c0ef7102fce4",
+            "subject": "Advance approved work to Wave A source preflight"
+          },
+          {
+            "head": "16b23900b354cc5126d4d5ba0a616a232484ff16",
+            "subject": "Add Wave A source-contract preflight packet"
+          },
+          {
+            "head": "a4ebba825e80256ad55ed6bfcaf973a2df37d413",
+            "subject": "Audit source portfolio and role coverage"
+          },
+          {
+            "head": "e0f0a0b7346cc80eb489261547c9619792207b89",
+            "subject": "Advance approved work to source portfolio audit"
+          },
+          {
+            "head": "32025f6c050fdd3c9fda5475c235cb261edc8cbf",
+            "subject": "Add source portfolio and role coverage audit packet"
+          },
+          {
+            "head": "e276541598131d7d9132789dbdd3cf88e4460ffe",
+            "subject": "Record semantic compute-worthiness results"
+          },
+          {
+            "head": "f0d876d0c81991bda820b1dddce1757b6b8d5c17",
+            "subject": "Prepare semantic compute-worthiness human validation"
+          },
+          {
+            "head": "49dfd6831c066b1e2836ea8576c63c7970fbceb1",
+            "subject": "Advance approved work to semantic worthiness validation"
+          },
+          {
+            "head": "129aa0a2d25c0272bebca55146a9f14d4dbbc33c",
+            "subject": "Add semantic compute worthiness validation packet"
+          },
+          {
+            "head": "f4c6d06a53b020dcd40aed80fbb008471e9b65ed",
+            "subject": "Audit Phase 4 semantic compute allocation"
+          },
+          {
+            "head": "cda45081c183b33684efdfbc981a6dd40382a7f6",
+            "subject": "Advance approved work to semantic compute allocation audit"
+          },
+          {
+            "head": "b814ae8b689348117a121e8a3acc1f4bee52e4ec",
+            "subject": "Add semantic compute allocation audit packet"
+          },
+          {
+            "head": "324b0c865d935d558692fa9f664efa7f165bc0f0",
+            "subject": "Advance approved work to prospective sampling cache correction"
+          },
+          {
+            "head": "6145c892e2d1787156b60c648316b3f42fe7091f",
+            "subject": "Add prospective sampling cache correction packet"
+          },
+          {
+            "head": "1ae51b729f6b1f96e4c4dd7a0c2b37c3cb71ca89",
+            "subject": "Advance approved work to fresh prospective preflight"
+          },
+          {
+            "head": "965551cbf9d9ea627b5faa0f5bcfbc2064e95641",
+            "subject": "Add fresh state refresh and prospective preflight packet"
+          },
+          {
+            "head": "e69d1fc8ff40c4957ca4e8df9966ff3f36ce74b2",
+            "subject": "Prepare Phase 4 prospective validation protocol"
+          },
+          {
+            "head": "dd28569cf49a9b88093268d53369d4881c61766d",
+            "subject": "Advance approved work packet to prospective validation design"
+          },
+          {
+            "head": "8d872a9c3c8ca7cbb992fb28631b26956358aa41",
+            "subject": "Add Phase 4 prospective validation design packet"
+          },
+          {
+            "head": "55bff4b09e0b6e922c5548fa4a171b0db71bba2a",
+            "subject": "Fix Phase 4 market normalization and residual diagnostics"
+          },
+          {
+            "head": "b2f9846caeb1a815ff999e7b7a2fecd31d4ba1f6",
+            "subject": "Advance approved work packet to residual diagnostics"
+          },
+          {
+            "head": "de1d0f5f96c3b9930b129fcc54c8c80a9a5e4b74",
+            "subject": "Add Phase 4 residual diagnostics work packet"
+          },
+          {
+            "head": "3739f2235b10d2219a475fe6674190e265a98227",
+            "subject": "Implement frozen Phase 4 retrospective replay"
+          },
+          {
+            "head": "be6fec7136458816dd9308e581397ad4b7dd68bf",
+            "subject": "Advance approved work packet to Phase 4 retrospective replay"
+          },
+          {
+            "head": "03157a1fab1b30ad758a829cfa17b04f4d4a971c",
+            "subject": "Add Phase 4 retrospective replay work packet"
+          },
+          {
+            "head": "ceed7fd2b44b3e66d869532aef013c2dbfdc3f3b",
+            "subject": "Integrate Phase 4 seniority guard"
+          },
+          {
+            "head": "d6dee5e117a69ff6795d81bb0c436451204ae794",
+            "subject": "Advance approved work packet to Phase 4 seniority guard"
+          },
+          {
+            "head": "bba63ef6f06e8681170b809bf6d17950a47fe2db",
+            "subject": "Add Phase 4 seniority guard work packet"
+          },
+          {
+            "head": "d0e12a91ed25465e90bd17f84e3cb19b9ef36347",
+            "subject": "Integrate Phase 4 decision preferences"
+          },
+          {
+            "head": "c23ef186a462aa4161c7d47737249c67e8b19c77",
+            "subject": "Advance approved work packet to decision preferences"
+          },
+          {
+            "head": "bef86042e70dbd47425a4a3cd1679050256ee8ec",
+            "subject": "Add Phase 4 decision preferences work packet"
+          },
+          {
+            "head": "a0400bc9cdfddb88dc2796fda1f0e0a7dd6def0d",
+            "subject": "Integrate Phase 4 opportunity clustering and preferred variants"
+          },
+          {
+            "head": "38088dc87c56a5d5c2cc155d4b4cba17df990fec",
+            "subject": "Advance approved work packet to Phase 4 clustering"
+          },
+          {
+            "head": "bcc92b27a68cbbd51214f445fc908102e93931f1",
+            "subject": "Add Phase 4 opportunity clustering work packet"
+          },
+          {
+            "head": "2d9b255b5aed5a258573b7b144370433b0bcad68",
+            "subject": "Integrate Phase 4 candidate market routing"
+          },
+          {
+            "head": "3daabca88acbc6a95cdb959e481c31390ee464ce",
+            "subject": "Point status to approved Phase 4 work packet"
+          },
+          {
+            "head": "3f977c83fb6bd3e96b41044520aafc73a82feca4",
+            "subject": "Add Phase 4 market routing work packet"
+          },
+          {
+            "head": "5c6309b1ee42afd461471dc8a7220b0fc557366f",
+            "subject": "Add Phase 4 current candidate market status"
+          },
+          {
+            "head": "f32f5fe0b5aae184f41e232d90efe45c84cfcd49",
+            "subject": "Add Phase 4 Slice 2 implementation spec"
+          },
+          {
+            "head": "db83e7068ac14b60ad3e9cceafd47ddf82649d02",
+            "subject": "Add Phase 4 market access policy representation"
+          },
+          {
+            "head": "f680993ee4083bea783b1a8e37fee933c80ce66c",
+            "subject": "Specify Phase 4 policy and validation architecture"
+          },
+          {
+            "head": "fd4c579899d7be89d837d45cfe9dbcdf776a94b8",
+            "subject": "Add project survivability and governance control plane"
+          },
+          {
+            "head": "fe03f72a26e2875130d713a5619b869f5cd3f48a",
+            "subject": "Add live decision validation workflow"
+          },
+          {
+            "head": "6c2f93e8c3b56d887f5f2697bf54f64768cbc073",
+            "subject": "Add scope-aware state refresh and persisted detail reuse"
+          },
+          {
+            "head": "7b75c69a1bc9f85849a2d9b4dd95629d1ecf38a2",
+            "subject": "Implement Phase 3 relevance scoring architecture"
+          },
+          {
+            "head": "b7b937e2d7319efdc80cc429b0865524f6234991",
+            "subject": "Define Phase 3 scoring architecture and benchmark"
+          },
+          {
+            "head": "b10a6716680facc15314344d5595112d2dd89c95",
+            "subject": "Validate persistent job state and change detection"
+          },
+          {
+            "head": "4a07db52f8bd208e378ce9078811f027dea3e9e5",
+            "subject": "Define state and change detection architecture"
+          },
+          {
+            "head": "801cb7e082b321e130b5951ac62c539b56b32ad5",
+            "subject": "Validate reusable job ingestion architecture"
+          }
+        ],
+        "truncated": true
+      },
+      "review_due": {
+        "state": "REVIEW_CANDIDATE",
+        "facts": [],
+        "candidates": [
+          {
+            "code": "PRIOR_GOVERNOR_FOLLOW_UP_REQUIRES_ASSESSMENT",
+            "classification": "REVIEW_CANDIDATE",
+            "kind": "NEXT_BOUNDARY",
+            "evidence": "A fresh-candidate strategy remains the next meaningful boundary after accepted EY readiness.",
+            "limitation": "A constraint, next boundary or conditional follow-up is not proof that review is due now"
+          },
+          {
+            "code": "HUMAN_GATE_TEXT",
+            "classification": "REVIEW_CANDIDATE",
+            "evidence": [
+              {
+                "heading": "Current approved work packet",
+                "line": "`LOCAL_REPAIRS_READINESS_PASS_AWAITING_OWNER_REVIEW`. Owner authorized only the"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "Previous execution (2026-10-08): `ATTEMPT_003_COLLECTED_PARTIAL_AWAITING_OWNER_REVIEW`."
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "Stop for owner review of the three failures. No repair, new attempt, further"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "Phase A status: `IMPLEMENTED_OWNER_REVIEWED_ACCEPTED` (2026-10-07)."
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "SAP source-contract status: `IMPLEMENTED_OWNER_REVIEWED_ACCEPTED` (2026-10-07)."
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "Latest continuation: `EY_ACTIVATION_READINESS_IMPLEMENTED_OWNER_REVIEWED_ACCEPTED` (2026-10-08)."
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "unchanged. Full offline suite: 568 passed, 8 skipped, 23 deselected. Owner review"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "Phase B is owner-reviewed/accepted. Historically, under C–F-only authorization,"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "regressions. Schema 4 is owner-reviewed/accepted for surface-scoped identity and"
+              },
+              {
+                "heading": "Current gate",
+                "line": "> owner-reviewed/accepted. Stop after the authorized activation closure."
+              }
+            ],
+            "truncated": true,
+            "limitation": "Literal text may be historical, conditional, contradictory, or a prohibition"
+          },
+          {
+            "code": "INCIDENT_RECOVERY_TEXT",
+            "classification": "REVIEW_CANDIDATE",
+            "evidence": [
+              {
+                "heading": "Current approved work packet",
+                "line": "their before-run hashes, including both aborted candidates and the historical DB."
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "schema-4 candidate, with isolated failures and no historical/aborted imports."
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "local files and both aborted candidates remain byte-identical. No operational/"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "byte-identical recovery duplicates. Private paths are recorded only privately."
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "The candidate is not canonical, and its required new recovery evidence makes"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "It is **aborted evidence**, not a migration/resumption target. SAP's required"
+              },
+              {
+                "heading": "Current gate",
+                "line": "> another source. Preserve both aborted databases, historical evidence and"
+              },
+              {
+                "heading": "Current gate",
+                "line": "Frozen operational-recovery statuses:"
+              },
+              {
+                "heading": "Current gate",
+                "line": "- lost `a07d5300...` state: `LOST_OPERATIONAL_STATE`."
+              }
+            ],
+            "truncated": false,
+            "limitation": "Literal text may be historical, conditional, contradictory, or a prohibition"
+          },
+          {
+            "code": "WORK_PACKET_TEXT",
+            "classification": "REVIEW_CANDIDATE",
+            "evidence": [
+              {
+                "heading": "Current approved work packet",
+                "line": "specs/phase4/SPEC-025-epoch2-bootstrap-and-kraken-ashby.md"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "backup or canonicalization. See the latest continuation in SPEC-025."
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "SPEC-025 remains active. Convergence mechanism review is accepted, EY-only"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "SPEC-025 is the only active implementation packet. It first adds and validates"
+              },
+              {
+                "heading": "Current approved work packet",
+                "line": "SPEC-025 explicitly authorizes the bounded live-source calls and operational"
+              }
+            ],
+            "truncated": false,
+            "limitation": "Literal text may be historical, conditional, contradictory, or a prohibition"
+          }
+        ],
+        "unknowns": [
+          "ACCEPTED_REVIEW_HEAD_UNKNOWN: movement since GOV-004 cannot be counted",
+          "ACCEPTED_STATUS_UNKNOWN: transition since accepted review cannot be proven",
+          "UNCOMMITTED_EVIDENCE: HEAD does not describe all working-copy evidence"
+        ],
+        "follow_up_evidence": "A fresh-candidate strategy remains the next meaningful boundary after accepted EY readiness."
+      }
+    },
+    {
+      "id": "asymmetry-engine",
+      "name": "Asymmetry Engine",
+      "repository": "CIF84/-asymmetry-engine",
+      "constitution_path": "constitutions/asymmetry-engine.md",
+      "authoritative_status_path": "STATUS.md",
+      "evaluated_head": "caa0a322adcd90ebc2f90830d866afab7cdbe95d",
+      "status_sha256": "9f59d0a402e205b1b4f809e56cd5b781eb5e82dfcdaa018b203b00c8fb8a6461",
+      "tracked_worktree_dirty": true,
+      "tracked_worktree_status_sha256": "85568069b75792b08e328e2bef8f6f6a12ef6cf74cc3b764aa1460ce83102bd7",
+      "evidence_timestamp": "2026-10-08T09:31:32+00:00",
+      "project_gate_state": {
+        "classification": "VERBATIM_OBSERVATION_REQUIRES_REVIEW",
+        "excerpts": [
+          {
+            "heading": "Preamble",
+            "text": "# Asymmetry Engine Status\n\n**Recorded:** 2026-10-08\n\n**Branch:** `codex/review-059`\n\n**Operational state:** `IMPLEMENTING`"
+          },
+          {
+            "heading": "Current state",
+            "text": "Experiment 059 is frozen with executor verdict **Q — QUALIFY** for C04, but independent review has **not approved Q**.\n\nIndependent review found two narrow admission uncertainties:\n1. **R1 — wedge consequence:** public evidence must establish that the course-creator count/release/revocation/tier decision is consequential enough to justify a commercial wedge.\n2. **R2 — qualified-audience access:** a legitimate measurable route must plausibly reach the exact target segment; permission to post in a generic podcasting services thread is insufficient.\n\nNo launch is authorized."
+          },
+          {
+            "heading": "Active work",
+            "text": "**059R — C04 Admission Remediation**\n\nSpecification:\n- `specs/059R-c04-admission-remediation.md`\n\nReview:\n- `experiments/059/review.md`\n\nFrozen result:\n- `experiments/059/proven-flow-wedge-search.md`"
+          },
+          {
+            "heading": "Authority",
+            "text": "Allowed under `Execute the active work packet.`:\n- bounded public research on C04 only;\n- at most five audience surfaces;\n- create `experiments/059/remediation.md`;\n- mechanically update STATUS;\n- run tests/integrity;\n- commit locally.\n\nNot authorized:\n- new candidate search;\n- actor contact/interviews/surveys;\n- posting/advertising;\n- affiliate enrollment;\n- account creation;\n- spending;\n- launch;\n- product/software/content infrastructure;\n- edits to the frozen 059 result;\n- push or merge."
+          },
+          {
+            "heading": "Next operation",
+            "text": "Execute the authorized bounded C04-only public-evidence remediation under SPEC-059R; stop after validation and local commit.\n\nRecommended model: GPT-6.1 Sol High. Stop after local commit."
+          }
+        ]
+      },
+      "last_governor_review": "reviews/GOV-004.md",
+      "last_allocation": "allocations/CYCLE-009.md",
+      "governor_verdict": {
+        "source": "reviews/GOV-004.md",
+        "status": "LAST_ACCEPTED_NOT_REEVALUATED",
+        "text": "**RUN PROVEN-FLOW SEARCH.**\n\nIf 059 returns Q, the next allocation should strongly favor a bounded real economic treatment. If it returns N again, reassess search constraints before permitting another proxy/research chain."
+      },
+      "material_strategic_debt": {
+        "source": "reviews/GOV-004.md",
+        "status": "LAST_ACCEPTED_NOT_REEVALUATED",
+        "text": "- qualifying proven-flow wedge;\n- launch-ready paired treatment;\n- explicit budget;\n- real exposure;\n- transaction/value capture;\n- recurrence;\n- mature low-touch economics."
+      },
+      "history": {
+        "scope": "RECENT_CONTEXT_ONLY_BASELINE_UNKNOWN",
+        "baseline": null,
+        "commits": [
+          {
+            "head": "caa0a322adcd90ebc2f90830d866afab7cdbe95d",
+            "subject": "status: activate C04 admission remediation"
+          },
+          {
+            "head": "a1c3e7aab5217a9697dfb8be293a2d02d0e712ef",
+            "subject": "spec: remediate C04 admission evidence"
+          },
+          {
+            "head": "e0937b2ab4316f711b3fd018af7773a5f96d5b35",
+            "subject": "review: require bounded C04 remediation before 059 Q approval"
+          },
+          {
+            "head": "1541be1f782091142f3209b53c4f29676ee01b89",
+            "subject": "status: record 059 review publication approval block"
+          },
+          {
+            "head": "5cd17bd39cc872961dc0727d20bfc21ffab931c9",
+            "subject": "status: prepare frozen 059 work for independent review"
+          },
+          {
+            "head": "e1f88e60c829fd62016027c86f11276acc91053f",
+            "subject": "experiment 059: qualify private-course audio treatment"
+          },
+          {
+            "head": "d422c6b64f61a5f3f893fe55763b06947b15dd7f",
+            "subject": "status: activate proven-flow wedge search"
+          },
+          {
+            "head": "6f377c16ababc3c902477bb93909f1706efa75d6",
+            "subject": "spec: search proven economic flows for Phase II wedge"
+          },
+          {
+            "head": "e0ff36f9142c13871bc400f6d5b09adf156e5fba",
+            "subject": "status: publish approved 058 closure"
+          },
+          {
+            "head": "02b4f410c5d9936ec306acd000a8845add3b6f40",
+            "subject": "exp058: record approved debrief and local closure"
+          },
+          {
+            "head": "261d8af7119175243d4ca6bc73b0288153b44b74",
+            "subject": "review: uphold 058 N and correct Phase II residual-gap gate"
+          },
+          {
+            "head": "228b4dec3fe0f43f576e286a10e2e7f822e118a9",
+            "subject": "Prepare 058 independent review packet"
+          },
+          {
+            "head": "681a1401454a6079d0ee63907afd4a1a4385916f",
+            "subject": "exp058: freeze bounded entry-selection result"
+          },
+          {
+            "head": "7703390af968e1ef17fcff541ba1487e516b3b67",
+            "subject": "status: begin AE Phase II economic proof"
+          },
+          {
+            "head": "d7e8e950a9d8a6f08dbbc30fc1760c879aa4585e",
+            "subject": "spec: activate Phase II economic entry selection"
+          },
+          {
+            "head": "9ce70789c38e7309f09b01bf78e0babe4f7587d2",
+            "subject": "status: publish approved 057B closure"
+          },
+          {
+            "head": "64069564c7c937947c1fe00d28e80ca22c45fe41",
+            "subject": "exp057B: record approved debrief and local closure"
+          },
+          {
+            "head": "a287fa6bd9492605a2e850da1828e1b5b5e70a08",
+            "subject": "review: validate 057B shortlist with entry-market correction"
+          },
+          {
+            "head": "531e7fdcfcb35987a9781773799f4a3f87d7d9c8",
+            "subject": "Prepare 057B independent review packet"
+          },
+          {
+            "head": "50be98765eb66318c16e70eb9335d69753ba3ac3",
+            "subject": "exp057B: freeze reveal and feasibility discrimination"
+          },
+          {
+            "head": "96947a6b0d19194c0309c10432f0907d326865c6",
+            "subject": "status: activate 057B reveal feasibility discrimination"
+          },
+          {
+            "head": "efb33237c59ed0cd7160b9575d59ee3cb063c5fb",
+            "subject": "spec: reveal and discriminate capture mechanisms"
+          },
+          {
+            "head": "d557693984172cbf2947eb747d1c8e18f33e2821",
+            "subject": "evidence: preserve blind mechanism-space result"
+          },
+          {
+            "head": "fed38627938a1ab8546340cd63c344f9cbadeadd",
+            "subject": "spec: add one-file blind executor instruction"
+          },
+          {
+            "head": "4edfedb1b9930070d2cef8096270f8a455b972c4",
+            "subject": "spec: add self-contained blind evidence capsule"
+          },
+          {
+            "head": "f838d1a190d6a9f7e85de9ea0adb28961d77f88a",
+            "subject": "status: activate isolated 057A blind arm"
+          },
+          {
+            "head": "45d29e915d859d6d2ff4ae8a37d0f2c90a6aa7ef",
+            "subject": "spec: add isolated blind arm for 057 attempt 2"
+          },
+          {
+            "head": "2fb4b686ed850bff1216856e76a2a45b82ad89ac",
+            "subject": "status: publish approved Experiment 057 Attempt 1 closure"
+          },
+          {
+            "head": "cf2db1adaa492f940f38317c52eb25a6b68d05b4",
+            "subject": "exp057: record approved invalid-attempt debrief and local closure"
+          },
+          {
+            "head": "c58129da3b8e3bf418cc578ab108dbc1deb56c04",
+            "subject": "review: approve 057 invalid context-contamination result"
+          },
+          {
+            "head": "f493ac581464a5d098c448023030578408611216",
+            "subject": "exp057: authorize bounded review publication"
+          },
+          {
+            "head": "534004cd3b8243ce48268dd4148dbd2b3676307f",
+            "subject": "exp057: record review publication approval blocker"
+          },
+          {
+            "head": "94fa931bc6a119c531764e56122079d754c73507",
+            "subject": "exp057: prepare frozen invalid-run record for review"
+          },
+          {
+            "head": "4d3bd17d685f1c28a3c5a61800df8d9eda651c6c",
+            "subject": "exp057: record invalid blind-order execution"
+          },
+          {
+            "head": "e710318530b49c4d62e0da3c1c67ffb6dce3430e",
+            "subject": "status: activate value-capture topology selection"
+          },
+          {
+            "head": "b8ab98de4a9ad35d008c25dcd2ca7841426fa7f0",
+            "subject": "spec: select AE value-capture topology"
+          },
+          {
+            "head": "87d5ea25b85936a8e29b82991c1fa6dcf88bce15",
+            "subject": "status: publish approved Experiment 056 closure"
+          },
+          {
+            "head": "28a76405b8ace552ecdbd48f6ab2cd2e57869b04",
+            "subject": "exp056: record approved review correction and local closure"
+          },
+          {
+            "head": "f10b756b76d8053afef24ab389187231648e86b8",
+            "subject": "review: correct 056 substrate selection after blind challenge"
+          },
+          {
+            "head": "9492e7876800823e67c68acced210b050312cc7d",
+            "subject": "review: freeze blind 056 strategy-space challenge"
+          },
+          {
+            "head": "31c59426d08224c64ff609ee7449dc32f9f6b3c1",
+            "subject": "status: prepare Experiment 056 for independent review"
+          },
+          {
+            "head": "928726c7c7155d1c834efd2acc95cd5b5ea0cbbc",
+            "subject": "exp056: freeze strategic trajectory review"
+          },
+          {
+            "head": "d582d891617c9293e81844e0abe1221fda3154b2",
+            "subject": "status: activate strategic trajectory review"
+          },
+          {
+            "head": "06c1385cb1ea5068ef0a9a40ae60d9ff07ce8ca9",
+            "subject": "spec: review AE trajectory toward money machine"
+          },
+          {
+            "head": "c58bd5e95a9f9f78b3ebf798703767976b11fbe2",
+            "subject": "status: publish approved experiment 055 closure"
+          },
+          {
+            "head": "28ec7d11f160c815c0db9e925d0df2913bd0e610",
+            "subject": "experiment 055: record approved debrief and local closure"
+          },
+          {
+            "head": "87512602342a2ed14824ef5c451043959a01c8a5",
+            "subject": "review: approve 055 Engine visibility V2.1"
+          },
+          {
+            "head": "881bbcec7275eba8f316d558f94f9a269454e7d4",
+            "subject": "status: mark 055 ready for independent review"
+          },
+          {
+            "head": "48c5b493967f9f1019c36be63213f072774d926f",
+            "subject": "evidence: record 055 V2.1 human acceptance"
+          },
+          {
+            "head": "387528a369c2025bcec6f653671ee54093a14aba",
+            "subject": "status: prepare 055 V2.1 for human acceptance"
+          },
+          {
+            "head": "84f982e2f9344035916405169913766f541dbee9",
+            "subject": "experiment 055: freeze V2.1 human-language remediation"
+          },
+          {
+            "head": "52a99057d0dc1bd94b69ae6a1878dc5aa3890874",
+            "subject": "reconcile: preserve frozen 055 V2 in remediation history"
+          },
+          {
+            "head": "7e6ec2280116ff97af95ea6120016e5b768223ce",
+            "subject": "status: activate 055 readability remediation"
+          },
+          {
+            "head": "5ed527ba4b882cf076f17adedf614007c3d6c054",
+            "subject": "packet: define 055 readability remediation"
+          },
+          {
+            "head": "bc218b4f696e1765993ce458de2c1fff63f143e0",
+            "subject": "evidence: record 055 readability blocker"
+          },
+          {
+            "head": "412a56f6befe776c7de9232ab9e313bc9abfdb30",
+            "subject": "experiment 055: freeze static engine control plane v2"
+          },
+          {
+            "head": "4691984660d601f42aee41266c30020599b61bea",
+            "subject": "status: activate experiment 055"
+          },
+          {
+            "head": "822a681eadb322de4926de606f121b19b7b8794f",
+            "subject": "spec: test engine control plane v2"
+          },
+          {
+            "head": "8aae719e9b5bbdc4890ebacf260658c708eaf2ed",
+            "subject": "status: publish approved experiment 054 closure"
+          },
+          {
+            "head": "8070d861090f22b14a3ae4a3709aff2f21cf78a6",
+            "subject": "experiment 054: record approved debrief and local closure"
+          },
+          {
+            "head": "8aac66fb49602fada2dce0c4a5da7b2124be8d35",
+            "subject": "review: approve experiment 054 contract"
+          },
+          {
+            "head": "2482e36f9fc8b341d01175848583c6b534bbffc8",
+            "subject": "status: prepare experiment 054 for independent review"
+          },
+          {
+            "head": "29b36c0d12514138998952b21c423b6af5c138ba",
+            "subject": "experiment 054: test manual opportunity identity evidence contract"
+          },
+          {
+            "head": "00ac720cd98974d5354aafe1bf5fae3a165b4fba",
+            "subject": "status: activate experiment 054"
+          },
+          {
+            "head": "00977871d76a27b5ba3a50d0aa41de6a2e6a478b",
+            "subject": "spec: test opportunity identity evidence contract"
+          },
+          {
+            "head": "50452b836ea869731aeec4fed941e80c5ed526cb",
+            "subject": "status: publish approved experiment 053 closure"
+          },
+          {
+            "head": "cb074fdbd7f5b545bbe06bb4f603ca594c4d8095",
+            "subject": "experiment 053: record approved debrief and local closure"
+          },
+          {
+            "head": "ce442caa364b9da5f01d36421cab2322f15748e5",
+            "subject": "review: approve experiment 053 audit"
+          },
+          {
+            "head": "6f34fcc02868e6a68153e9afdc86b7816d69c27f",
+            "subject": "status: prepare experiment 053 for independent review"
+          },
+          {
+            "head": "282a2eeaf55764d4a6da309b6d94e4275344b410",
+            "subject": "experiment 053: audit engine-state funnel semantics"
+          },
+          {
+            "head": "71c28d2568c95958d0ef9b3b3ba86f8069e928a2",
+            "subject": "status: activate experiment 053"
+          },
+          {
+            "head": "8f7671a1d9f93d8bb97df6aadefb9a5032748514",
+            "subject": "spec: audit engine-state funnel semantics"
+          },
+          {
+            "head": "d8f6f81f614854588d273937e1e03d9b1ffa5946",
+            "subject": "status: publish approved experiment 052 closure"
+          },
+          {
+            "head": "ea385f35ab8e121c01a6ef72167286787acd88c8",
+            "subject": "experiment 052: record approved debrief and local closure"
+          },
+          {
+            "head": "35c7b57b1a1084ce75a1bb44526a84bbdac51baa",
+            "subject": "git: reconcile canonical protocol with unpublished experiment 052"
+          },
+          {
+            "head": "5adf3312624b37bf01f9dad11c5c282ca12537f6",
+            "subject": "protocol: formalize recoverable handoffs"
+          },
+          {
+            "head": "0980a221bbb613ac4b724b56c94bf3c7d651e01d",
+            "subject": "protocol: require durable handoff context"
+          },
+          {
+            "head": "ecefc36f576726de257e9ef1582770c191edf85b",
+            "subject": "status: unblock experiment 052 debrief"
+          },
+          {
+            "head": "20a4facd62b7e2deff9e3f383fe54b1976e0d2c3",
+            "subject": "evidence: persist experiment 052 human acceptance"
+          },
+          {
+            "head": "09f0593c5f2cb8eb3e8cf7bc9b32fbdbb7511371",
+            "subject": "status: block 052 closure pending acceptance evidence"
+          },
+          {
+            "head": "35a344f53a0da3c3f9e65eff9d21eb081e254725",
+            "subject": "docs: consolidate operating protocol"
+          },
+          {
+            "head": "1ffb110bc2cd564ddeaf05f51dc2db5ebe33730c",
+            "subject": "experiment 052: test human attention control plane v1"
+          },
+          {
+            "head": "edc6ffb00ea336b2f9b301de49aa7c0f270e67ff",
+            "subject": "spec: add human attention control plane v1 experiment"
+          },
+          {
+            "head": "a4e71855ef9fabc7d74b979d330381f1b77fbbc7",
+            "subject": "experiment 051: record human acceptance"
+          },
+          {
+            "head": "bb5ceb9c8e84b17f0b0511b507fd205327711d60",
+            "subject": "experiment 051: test opportunity distance representation"
+          },
+          {
+            "head": "a674d998d85d5ca38166c10763752e969006ce07",
+            "subject": "spec: add opportunity distance representation test"
+          },
+          {
+            "head": "0f72b7b94e40a5ad97087dc5b0ad4a8c707c2b54",
+            "subject": "experiment 050: audit economic distance to value"
+          },
+          {
+            "head": "1e4ee7f16a48facf3398342f02133a7030a7e559",
+            "subject": "spec: audit economic distance to value capture"
+          },
+          {
+            "head": "58a20b50c3b54a8e96a22a92079c7927985c2b90",
+            "subject": "experiment 049: audit learning latency serialization"
+          },
+          {
+            "head": "ae9e7c426d0f753c9a25a25208dfaacf3e36a87c",
+            "subject": "spec: finish 049 completion contract"
+          },
+          {
+            "head": "16edbd5badb8baf67b50de4dacc50241637a612b",
+            "subject": "spec: complete learning latency audit"
+          },
+          {
+            "head": "426d00c07f0571b59f866d37dbb1165cdf25bf53",
+            "subject": "spec: audit learning latency and serialization"
+          },
+          {
+            "head": "63fb5b2754dde356dc7526c51ebd72b80a667830",
+            "subject": "experiment 048: record moderation status ambiguity"
+          },
+          {
+            "head": "5f3c58149f1889c6633351e9200f7cb6db21ba12",
+            "subject": "experiment 048: record authorized moderated submission"
+          },
+          {
+            "head": "c7a8cef97a0312a15a188bf7f77557cee94dab33",
+            "subject": "experiment 048: record second pre-post control failure"
+          },
+          {
+            "head": "6c976d8c586c231cc232e428b951f11951b9ca9b",
+            "subject": "experiment 048: record pre-post control failure"
+          },
+          {
+            "head": "eac6fca3d2a29f826c6f665ded7d030f6db49eb6",
+            "subject": "spec: add bounded realtime migration evidence request"
+          },
+          {
+            "head": "047437673ca24e5d4dba29a44b66299f83207ece",
+            "subject": "experiment 047: check discriminator feasibility"
+          },
+          {
+            "head": "efe585fa227590e8a27c20cca02ba63a28ddcf58",
+            "subject": "spec: add realtime migration discriminator feasibility check"
+          },
+          {
+            "head": "7dec70fa07ed5ac30ecb4531ffc75e2be7aba7db",
+            "subject": "experiment 046: fresh opportunity discovery"
+          }
+        ],
+        "truncated": true
+      },
+      "review_due": {
+        "state": "REVIEW_CANDIDATE",
+        "facts": [],
+        "candidates": [
+          {
+            "code": "PRIOR_GOVERNOR_FOLLOW_UP_REQUIRES_ASSESSMENT",
+            "classification": "REVIEW_CANDIDATE",
+            "kind": "CONDITIONAL",
+            "evidence": "If 059 returns Q, the next allocation should strongly favor a bounded real economic treatment. If it returns N again, reassess search constraints before permitting another proxy/research chain.",
+            "limitation": "A constraint, next boundary or conditional follow-up is not proof that review is due now"
+          },
+          {
+            "code": "WORK_PACKET_TEXT",
+            "classification": "REVIEW_CANDIDATE",
+            "evidence": [
+              {
+                "heading": "Current state",
+                "line": "Experiment 059 is frozen with executor verdict **Q — QUALIFY** for C04, but independent review has **not approved Q**."
+              },
+              {
+                "heading": "Next operation",
+                "line": "Execute the authorized bounded C04-only public-evidence remediation under SPEC-059R; stop after validation and local commit."
+              }
+            ],
+            "truncated": false,
+            "limitation": "Literal text may be historical, conditional, contradictory, or a prohibition"
+          }
+        ],
+        "unknowns": [
+          "ACCEPTED_REVIEW_HEAD_UNKNOWN: movement since GOV-004 cannot be counted",
+          "ACCEPTED_STATUS_UNKNOWN: transition since accepted review cannot be proven",
+          "UNCOMMITTED_EVIDENCE: HEAD does not describe all working-copy evidence"
+        ],
+        "follow_up_evidence": "If 059 returns Q, the next allocation should strongly favor a bounded real economic treatment. If it returns N again, reassess search constraints before permitting another proxy/research chain."
+      }
+    }
+  ],
+  "freshness_mismatches": [
+    "opportunity-radar: status_sha256 changed",
+    "opportunity-radar: tracked_worktree_status_sha256 changed"
+  ],
+  "external_capabilities": {
+    "filesystem": "Bounded reads of declared Governor inputs and project status only; Governor-local output writes",
+    "git": [
+      "rev-parse --show-toplevel",
+      "remote get-url origin",
+      "rev-parse HEAD",
+      "status --porcelain=v1 -z --untracked-files=no",
+      "merge-base (when baseline known)",
+      "log --max-count=101 --format=..."
+    ],
+    "network_calls": 0,
+    "model_calls": 0,
+    "spend": 0,
+    "governed_mutation_commands": [],
+    "limitations": "No scan of private/ignored files; no global proof against writes by concurrent actors"
+  },
+  "packet_file_sha256": {
+    "projects/knowledge-compiler/STATUS.md": "386f95369f6b8497387cc02cd4b77186b9ce73fedf1b1154989477e805a0c2f3",
+    "projects/opportunity-radar/STATUS.md": "e80af96df3c94c5d3240e972f74fc0a945ffede141db099ca802d4af1f4ded7d",
+    "projects/asymmetry-engine/STATUS.md": "9f59d0a402e205b1b4f809e56cd5b781eb5e82dfcdaa018b203b00c8fb8a6461",
+    "governor/governor/config.json": "076e5b4b074344a909f855600fc452f226e6e8cdfde5f66466ba55835c9f93cf",
+    "governor/governor/workflow.py": "200b995a4793362463891c6e11b9ae6b607b322e994679500b571c469fa495bb",
+    "governor/governor/__main__.py": "fd09735de7d7c334c5d5939d800a3785760283c7bd2c204ddf97be8d20fe53fc",
+    "governor/governor/__init__.py": "3a4df281debf70d6d19fe8278db9f1c71a024991821063e2f3cb84a564c014d8",
+    "governor/templates/review.md": "3a86ae0237e32cc11049d19ff1ee40e3f771ef3e64083c8f369bccbf4b6f5c9c",
+    "governor/templates/allocation.md": "1fa2f1a89007c1893db3c208eb06e0243405673a4334b443d3aedf80412daee2",
+    "governor/CONSTITUTION.md": "187a76159fc5e212698c76abcf9262f5dad114d000e8468d8632ea39206a83b7",
+    "governor/GOVERNOR_PROTOCOL.md": "447d3f23a96e85ee5238efa6ece0bd7a113398e38eb4f0a2c5b9c324d64694b4",
+    "governor/PROJECTS.md": "266eec6ab6f5c62f60e933041fa57902638b0a9169c472cab29ccc6c29403188",
+    "governor/reviews/GOV-004.md": "1bcaa44f3fabf27b47486da64dc84696c03fc16fd412e813b794f6c2b68668ae",
+    "governor/allocations/CYCLE-009.md": "8dbcf62d5493bd7ecb30575a9d7ebe8a77c7594f25e1b43d42e4c6eefb80c4e9",
+    "governor/constitutions/knowledge-compiler.md": "0788fab8679492732151610b0b5102a426fbee5fd692cb8e59054affa25f0576",
+    "governor/constitutions/opportunity-radar.md": "86672efd905adfe8798a74f1522b0f2752a3cc5d5faf7aa04c69fe24cf9216af",
+    "governor/constitutions/asymmetry-engine.md": "5204ffeeb19fa805461a9bcfe71de0ecee0f8ff210e6fc6037636c570c33340f",
+    "GOV-DRAFT.md": "afedec40b5c1bbbbde3fae9a0c58bf9a7e44c1d8bf64a1c8427c1b14b3593473",
+    "CYCLE-DRAFT.md": "7b1f67838e4d23a7e744f97283dc3e8edd4f6e01a35cec820af1a5f5fe840e8c"
+  }
+}
