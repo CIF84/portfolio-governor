@@ -10,7 +10,7 @@ Portfolio Governor preserves the bigger picture across projects:
 - **Allocator:** where should scarce human attention, compute, and money go next?
 - **Projects:** independently determine the cheapest valid experiment that advances their objectives.
 
-This repository is **governance memory, not a control plane**.
+This repository is the **operational governance and allocation layer** for the portfolio. It remains observational and advisory by default; governed projects remain sovereign execution systems.
 
 ## Authority boundary
 
@@ -47,4 +47,4 @@ Controls are proportional to consequence. Resources are allocated in proportion 
 
 ## Status
 
-Version 0.1 is deliberately manual. No Governor software or automation is justified yet. Automation must be earned through repeated useful reviews.
+Four manual review/allocation cycles have validated the governance function. `SPEC-001 — Minimum Operational Governor` is now approved to operationalize evidence freshness, review-trigger detection, evidence assembly, derived state, and durable review workflow **inside this repository only**.\n\nOperationalization does not grant write authority over governed projects, autonomous spending, preemption, or external-action authority. Automation must continue to earn authority through evidence.
