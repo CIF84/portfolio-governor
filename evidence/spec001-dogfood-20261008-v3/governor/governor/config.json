@@ -1,0 +1,42 @@
+{
+  "previous_review": "reviews/GOV-004.md",
+  "previous_allocation": "allocations/CYCLE-009.md",
+  "projects": [
+    {
+      "id": "knowledge-compiler",
+      "name": "Knowledge Compiler",
+      "repository": "CIF84/knowledge-compiler",
+      "local_path": "../knowledge-compiler",
+      "constitution": "constitutions/knowledge-compiler.md",
+      "status_path": "STATUS.md",
+      "previous_evaluated_head": null,
+      "previous_status_sha256": null,
+      "follow_up_kind": "CONSTRAINT",
+      "follow_up": "Do not resume atomization/semantic-judge work unless the benchmark later demonstrates that semantic machinery earns its complexity."
+    },
+    {
+      "id": "opportunity-radar",
+      "name": "Opportunity Radar",
+      "repository": "CIF84/opportunity-radar",
+      "local_path": "../opportunity-radar",
+      "constitution": "constitutions/opportunity-radar.md",
+      "status_path": "docs/STATUS.md",
+      "previous_evaluated_head": null,
+      "previous_status_sha256": null,
+      "follow_up_kind": "NEXT_BOUNDARY",
+      "follow_up": "A fresh-candidate strategy remains the next meaningful boundary after accepted EY readiness."
+    },
+    {
+      "id": "asymmetry-engine",
+      "name": "Asymmetry Engine",
+      "repository": "CIF84/-asymmetry-engine",
+      "local_path": "../-asymmetry-engine",
+      "constitution": "constitutions/asymmetry-engine.md",
+      "status_path": "STATUS.md",
+      "previous_evaluated_head": null,
+      "previous_status_sha256": null,
+      "follow_up_kind": "CONDITIONAL",
+      "follow_up": "If 059 returns Q, the next allocation should strongly favor a bounded real economic treatment. If it returns N again, reassess search constraints before permitting another proxy/research chain."
+    }
+  ]
+}

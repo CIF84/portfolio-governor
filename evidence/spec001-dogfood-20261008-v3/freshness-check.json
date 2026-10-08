@@ -1,0 +1,11 @@
+{
+  "packet_id": "spec001-dogfood-20261008-v3",
+  "checked_at": "2026-10-08T09:33:19+00:00",
+  "result": "STALE_REVIEW_REFRESH_REQUIRED",
+  "evidence_scope": "LOCAL_WORKTREE_ONLY",
+  "mismatches": [
+    "opportunity-radar: status_sha256 changed",
+    "opportunity-radar: tracked_worktree_status_sha256 changed"
+  ],
+  "authority": "OWNER_REVIEW_REQUIRED_NO_VERDICT_PUBLISHED"
+}
